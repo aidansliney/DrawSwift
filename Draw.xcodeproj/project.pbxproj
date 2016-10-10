@@ -15,6 +15,12 @@
 		960F50341DA900EA0091AD2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960F50321DA900EA0091AD2C /* LaunchScreen.storyboard */; };
 		960F503F1DA900EB0091AD2C /* DrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F503E1DA900EB0091AD2C /* DrawTests.swift */; };
 		960F504A1DA900EB0091AD2C /* DrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50491DA900EB0091AD2C /* DrawUITests.swift */; };
+		960F505C1DAA56300091AD2C /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F505B1DAA56300091AD2C /* BooksTableViewController.swift */; };
+		960F505E1DAA56FE0091AD2C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F505D1DAA56FE0091AD2C /* Book.swift */; };
+		960F50601DAA57810091AD2C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F505F1DAA57800091AD2C /* Data.swift */; };
+		960F50641DAA9F860091AD2C /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50631DAA9F860091AD2C /* BookDetailController.swift */; };
+		960F50661DAAA2670091AD2C /* TutorialCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */; };
+		960F50681DAC12EB0091AD2C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50671DAC12EB0091AD2C /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		960F50451DA900EB0091AD2C /* DrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		960F50491DA900EB0091AD2C /* DrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawUITests.swift; sourceTree = "<group>"; };
 		960F504B1DA900EB0091AD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960F505B1DAA56300091AD2C /* BooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
+		960F505D1DAA56FE0091AD2C /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		960F505F1DAA57800091AD2C /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		960F50631DAA9F860091AD2C /* BookDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
+		960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewController.swift; sourceTree = "<group>"; };
+		960F50671DAC12EB0091AD2C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +111,16 @@
 		960F50261DA900EA0091AD2C /* Draw */ = {
 			isa = PBXGroup;
 			children = (
+				960F502D1DA900EA0091AD2C /* Main.storyboard */,
 				960F50271DA900EA0091AD2C /* AppDelegate.swift */,
 				960F50291DA900EA0091AD2C /* FirstViewController.swift */,
 				960F502B1DA900EA0091AD2C /* SecondViewController.swift */,
-				960F502D1DA900EA0091AD2C /* Main.storyboard */,
+				960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */,
+				960F505D1DAA56FE0091AD2C /* Book.swift */,
+				960F505F1DAA57800091AD2C /* Data.swift */,
+				960F505B1DAA56300091AD2C /* BooksTableViewController.swift */,
+				960F50631DAA9F860091AD2C /* BookDetailController.swift */,
+				960F50671DAC12EB0091AD2C /* TutorialViewController.swift */,
 				960F50301DA900EA0091AD2C /* Assets.xcassets */,
 				960F50321DA900EA0091AD2C /* LaunchScreen.storyboard */,
 				960F50351DA900EA0091AD2C /* Info.plist */,
@@ -262,8 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960F50661DAAA2670091AD2C /* TutorialCollectionViewController.swift in Sources */,
+				960F50681DAC12EB0091AD2C /* TutorialViewController.swift in Sources */,
 				960F502C1DA900EA0091AD2C /* SecondViewController.swift in Sources */,
+				960F50601DAA57810091AD2C /* Data.swift in Sources */,
 				960F50281DA900EA0091AD2C /* AppDelegate.swift in Sources */,
+				960F505C1DAA56300091AD2C /* BooksTableViewController.swift in Sources */,
+				960F50641DAA9F860091AD2C /* BookDetailController.swift in Sources */,
+				960F505E1DAA56FE0091AD2C /* Book.swift in Sources */,
 				960F502A1DA900EA0091AD2C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +533,7 @@
 				960F50501DA900EB0091AD2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		960F50511DA900EB0091AD2C /* Build configuration list for PBXNativeTarget "DrawTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +542,7 @@
 				960F50531DA900EB0091AD2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		960F50541DA900EB0091AD2C /* Build configuration list for PBXNativeTarget "DrawUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +551,7 @@
 				960F50561DA900EB0091AD2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
