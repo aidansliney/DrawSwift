@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 class TutorialViewController: UIViewController {
 
@@ -17,16 +19,35 @@ class TutorialViewController: UIViewController {
    
     
     let book = "b01"
+    let bookLong = "book01"
     let tutorial = "t01"
     var page = "01"
     let length = 27
     var counter = 1 // the first is 1
+    var iUS = ""
+    let iUE = ".png?alt=media"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        previousButton.isEnabled=false
-        tutorialImage.image = UIImage(named: book+tutorial+"p01")
+        previousButton.isEnabled = false
+        //set the first image
+        iUS = "https://firebasestorage.googleapis.com/v0/b/draw-891c7.appspot.com/o/phone%2F"+bookLong+"%2F"
+        let url = URL(string: iUS+book+tutorial+"p"+page+iUE)!
+        tutorialImage.kf.indicatorType = .activity
+        tutorialImage.kf.setImage(with: url)
+        //set the first help text
         helpText.text = b01t01help[0]
+        //create array of image NSUrls
+        var urls : [NSURL] = [];
+        for index in 1...length {
+            page = NSString(format: "%02d", index) as String
+            urls.append(NSURL(string: iUS+book+tutorial+"p"+page+iUE)!)
+        }
+        
+        //prefetch the images
+        let prefetcher = ImagePrefetcher(urls: urls as [URL])
+        prefetcher.start()
+ 
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,7 +71,13 @@ class TutorialViewController: UIViewController {
         helpText.text = b01t01help[counter-1]
         previousButton.isEnabled=true
         page = NSString(format: "%02d", counter) as String
-        tutorialImage.image = UIImage(named: book+tutorial+"p"+page)
+        
+        
+        let url = URL(string: iUS+book+tutorial+"p"+page+iUE)!
+        tutorialImage.kf.indicatorType = .activity
+        tutorialImage.kf.setImage(with: url)
+        
+        //tutorialImage.image = UIImage(named: book+tutorial+"p"+page)
         print(book+tutorial+"p"+String(page))
         
         if counter == length{
@@ -60,10 +87,12 @@ class TutorialViewController: UIViewController {
     @IBAction func previousPage(_ sender: AnyObject) {
         counter -= 1
         helpText.text = b01t01help[counter-1]
-        nextButton.isEnabled=true
+        nextButton.isEnabled = true
         page = NSString(format: "%02d", counter) as String
         tutorialImage.image = UIImage(named: book+tutorial+"p"+page)
-        print(book+tutorial+"p"+String(page))
+        let url = URL(string: iUS+book+tutorial+"p"+page+iUE)!
+        tutorialImage.kf.indicatorType = .activity
+        tutorialImage.kf.setImage(with: url)
         
         if counter == 1{
             previousButton.isEnabled=false}

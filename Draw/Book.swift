@@ -23,3 +23,15 @@ struct Book {
         self.cover = cover
     }
 }
+
+
+struct Tutorial {
+    var image: String?
+    var text: String?
+
+    init(image: String?,text: String? ) {
+        self.image = image
+        self.text = text
+
+    }
+}

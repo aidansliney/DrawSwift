@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9604F4431DAD18C100060D23 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9604F4421DAD18C100060D23 /* Kingfisher.framework */; };
 		960F50281DA900EA0091AD2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50271DA900EA0091AD2C /* AppDelegate.swift */; };
 		960F502A1DA900EA0091AD2C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50291DA900EA0091AD2C /* FirstViewController.swift */; };
 		960F502C1DA900EA0091AD2C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F502B1DA900EA0091AD2C /* SecondViewController.swift */; };
@@ -21,6 +22,8 @@
 		960F50641DAA9F860091AD2C /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50631DAA9F860091AD2C /* BookDetailController.swift */; };
 		960F50661DAAA2670091AD2C /* TutorialCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */; };
 		960F50681DAC12EB0091AD2C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50671DAC12EB0091AD2C /* TutorialViewController.swift */; };
+		96ACE33F1DAD1A1100EAE0B8 /* Pods_DrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96ACE33E1DAD1A1100EAE0B8 /* Pods_DrawTests.framework */; };
+		96ACE3401DAD1A2100EAE0B8 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9604F4421DAD18C100060D23 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9604F43F1DAD120000060D23 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				96ACE3401DAD1A2100EAE0B8 /* Kingfisher.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		825A08BB744A458D22FDF02B /* Pods-DrawTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawTests/Pods-DrawTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9604F4421DAD18C100060D23 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../Library/Developer/Xcode/DerivedData/Draw-cxwevpzycufathdntdrxowxzcrrh/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
 		960F50241DA900EA0091AD2C /* Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		960F50271DA900EA0091AD2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		960F50291DA900EA0091AD2C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +80,8 @@
 		960F50631DAA9F860091AD2C /* BookDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
 		960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewController.swift; sourceTree = "<group>"; };
 		960F50671DAC12EB0091AD2C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		96ACE33E1DAD1A1100EAE0B8 /* Pods_DrawTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_DrawTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_DrawTests.framework"; sourceTree = "<group>"; };
+		C57B11910DE0A04DC72F0E7D /* Pods-DrawTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawTests/Pods-DrawTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96ACE33F1DAD1A1100EAE0B8 /* Pods_DrawTests.framework in Frameworks */,
+				9604F4431DAD18C100060D23 /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5118EFB09C72BC5E80C43E32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				825A08BB744A458D22FDF02B /* Pods-DrawTests.debug.xcconfig */,
+				C57B11910DE0A04DC72F0E7D /* Pods-DrawTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		960F501B1DA900EA0091AD2C = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +127,8 @@
 				960F503D1DA900EB0091AD2C /* DrawTests */,
 				960F50481DA900EB0091AD2C /* DrawUITests */,
 				960F50251DA900EA0091AD2C /* Products */,
+				5118EFB09C72BC5E80C43E32 /* Pods */,
+				AFDA17B8485ED909A805BDF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,10 +149,10 @@
 				960F50271DA900EA0091AD2C /* AppDelegate.swift */,
 				960F50291DA900EA0091AD2C /* FirstViewController.swift */,
 				960F502B1DA900EA0091AD2C /* SecondViewController.swift */,
+				960F505B1DAA56300091AD2C /* BooksTableViewController.swift */,
 				960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */,
 				960F505D1DAA56FE0091AD2C /* Book.swift */,
 				960F505F1DAA57800091AD2C /* Data.swift */,
-				960F505B1DAA56300091AD2C /* BooksTableViewController.swift */,
 				960F50631DAA9F860091AD2C /* BookDetailController.swift */,
 				960F50671DAC12EB0091AD2C /* TutorialViewController.swift */,
 				960F50301DA900EA0091AD2C /* Assets.xcassets */,
@@ -146,6 +180,15 @@
 			path = DrawUITests;
 			sourceTree = "<group>";
 		};
+		AFDA17B8485ED909A805BDF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96ACE33E1DAD1A1100EAE0B8 /* Pods_DrawTests.framework */,
+				9604F4421DAD18C100060D23 /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +199,7 @@
 				960F50201DA900EA0091AD2C /* Sources */,
 				960F50211DA900EA0091AD2C /* Frameworks */,
 				960F50221DA900EA0091AD2C /* Resources */,
+				9604F43F1DAD120000060D23 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 960F50511DA900EB0091AD2C /* Build configuration list for PBXNativeTarget "DrawTests" */;
 			buildPhases = (
+				473EB6DCE1FA5B02705C1EB6 /* [CP] Check Pods Manifest.lock */,
 				960F50361DA900EB0091AD2C /* Sources */,
 				960F50371DA900EB0091AD2C /* Frameworks */,
 				960F50381DA900EB0091AD2C /* Resources */,
+				AC988366217DD7A212241A1C /* [CP] Embed Pods Frameworks */,
+				D375C5E8D2CABE7062C4CCF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,15 +261,18 @@
 				TargetAttributes = {
 					960F50231DA900EA0091AD2C = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					960F50391DA900EB0091AD2C = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 960F50231DA900EA0091AD2C;
 					};
 					960F50441DA900EB0091AD2C = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 960F50231DA900EA0091AD2C;
 					};
@@ -274,6 +324,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		473EB6DCE1FA5B02705C1EB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC988366217DD7A212241A1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawTests/Pods-DrawTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D375C5E8D2CABE7062C4CCF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawTests/Pods-DrawTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		960F50201DA900EA0091AD2C /* Sources */ = {
@@ -345,6 +443,7 @@
 /* Begin XCBuildConfiguration section */
 		960F504C1DA900EB0091AD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 825A08BB744A458D22FDF02B /* Pods-DrawTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -361,6 +460,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -395,6 +495,7 @@
 		};
 		960F504D1DA900EB0091AD2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C57B11910DE0A04DC72F0E7D /* Pods-DrawTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -411,6 +512,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -438,8 +540,14 @@
 		};
 		960F504F1DA900EB0091AD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 825A08BB744A458D22FDF02B /* Pods-DrawTests.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Kingfisher",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Draw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "learn-how-to-draw.Draw";
@@ -450,8 +558,14 @@
 		};
 		960F50501DA900EB0091AD2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C57B11910DE0A04DC72F0E7D /* Pods-DrawTests.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Kingfisher",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Draw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "learn-how-to-draw.Draw";
@@ -462,6 +576,7 @@
 		};
 		960F50521DA900EB0091AD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 825A08BB744A458D22FDF02B /* Pods-DrawTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -476,6 +591,7 @@
 		};
 		960F50531DA900EB0091AD2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C57B11910DE0A04DC72F0E7D /* Pods-DrawTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
