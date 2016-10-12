@@ -28,10 +28,13 @@ struct Book {
 struct Tutorial {
     var image: String?
     var text: String?
+    var book: String?
+    var t: String?
 
-    init(image: String?,text: String? ) {
+    init(book: String?,t: String?,image: String?,text: String? ) {
+        self.book = book
+        self.t = t
         self.image = image
         self.text = text
-
     }
 }

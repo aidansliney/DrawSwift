@@ -13,92 +13,55 @@ let bookData = [
 
 
 let tutorialData = [
-    Tutorial(image:"b01t01p29", text: "Full Figure" ),
-    Tutorial(image:"b01t02p28", text: "Basic Head"),
-    Tutorial(image:"b01t03p18", text: "Basic Hand"),
+    Tutorial(book:"book01", t:"t01", image:"b01t01p29", text: "Full Figure" ),
+    Tutorial(book:"book01", t:"t02",image:"b01t02p28", text: "Basic Head"),
+    Tutorial(book:"book01", t:"t03",image:"b01t03p18", text: "Basic Hand"),
     
-    Tutorial(image:"mi3_4figure21", text: "Full Figure" ),
-    Tutorial(image:"mi3_4head19", text: "The Head"),
-    Tutorial(image:"mi3_4torso18", text: "The Torso" ),
-    Tutorial(image:"mi3_4arm11", text: "The Arms"),
-    Tutorial(image:"mi3_4leg10", text: "The Legs" ),
-    Tutorial(image:"mi3_4hand11", text: "The Hands"),
-    Tutorial(image:"mi3_4foot08", text: "The Feet")
+    Tutorial(book:"book02", t:"t01",image:"mi3_4figure21", text: "Full Figure" ),
+    Tutorial(book:"book02", t:"t02",image:"mi3_4head19", text: "The Head"),
+    Tutorial(book:"book02", t:"t03",image:"mi3_4torso18", text: "The Torso" ),
+    Tutorial(book:"book02", t:"t04",image:"mi3_4arm11", text: "The Arms"),
+    Tutorial(book:"book02", t:"t05",image:"mi3_4leg10", text: "The Legs" ),
+    Tutorial(book:"book02", t:"t06",image:"mi3_4hand11", text: "The Hands"),
+    Tutorial(book:"book02", t:"t07",image:"mi3_4foot08", text: "The Feet"),
+    
+      Tutorial(book:"book03", t:"t01",image:"ma3_4figure13", text: "Full figure" ),
+      Tutorial(book:"book03", t:"t02",image:"ma3_4torso13", text: "The Head" ),
+      Tutorial(book:"book03", t:"t03",image:"ma3_4legs12", text: "The Torso" ),
+      Tutorial(book:"book03", t:"t04",image:"ma3_4head17", text: "The Arms" ),
+      Tutorial(book:"book03", t:"t05",image:"ma3_4hands07", text: "The Legs" ),
+      Tutorial(book:"book03", t:"t06",image:"ma3_4foot07", text: "The Hands" ),
+      Tutorial(book:"book03", t:"t07",image:"ma3_4arms12", text: "The Feet" ),
+      
+      Tutorial(book:"book04", t:"t01",image:"maflexa21", text: "Arm flex 1" ),
+      Tutorial(book:"book04", t:"t02",image:"maflexb16", text: "Arm flex 2" ),
+      Tutorial(book:"book04", t:"t03",image:"maflexc16", text: "Arm flex 3" ),
+      Tutorial(book:"book04", t:"t04",image:"maflexd18", text: "Arm flex 4" ),
+      Tutorial(book:"book04", t:"t05",image:"maflexe12", text: "Arm flex 5" ),
+      Tutorial(book:"book04", t:"t06",image:"maflexf18", text: "Arm flex 6" ),
+      Tutorial(book:"book04", t:"t07",image:"maflexg16", text: "Arm flex 7" ),
+      
+      Tutorial(book:"book05", t:"t01",image:"midynamickicka0117", text: "Dynamic Kick 1" ),
+      Tutorial(book:"book05", t:"t02",image:"midynamickicka0217", text: "Dynamic Kick 2" ),
+      Tutorial(book:"book05", t:"t03",image:"midynamickicka0317", text: "Dynamic Kick 3" ),
+      Tutorial(book:"book05", t:"t04",image:"midynamickicka0417", text: "Dynamic Kick 4" ),
+      Tutorial(book:"book05", t:"t05",image:"midynamickicka0516", text: "Dynamic Kick 5" ),
+      Tutorial(book:"book05", t:"t06",image:"midynamickicka0617", text: "Dynamic Kick 6" ),
+      Tutorial(book:"book05", t:"t07",image:"midynamickicka0717", text: "Dynamic Kick 1" ),
+      Tutorial(book:"book05", t:"t08",image:"midynamickicka0817", text: "Dynamic Kick 1" ),
+      
+       Tutorial(book:"book06", t:"t01",image:"b06t01p28", text: "Full Figure" ),
+       Tutorial(book:"book06", t:"t02",image:"b06t02p14", text: "Basic Head" ),
+       Tutorial(book:"book06", t:"t03",image:"b06t03p16", text: "Basic Hand" ),
+       
+       Tutorial(book:"book07", t:"t01",image:"b07t01p19", text: "Full Figure" ),
+       Tutorial(book:"book07", t:"t02",image:"b07t02p22", text: "The Face" ),
+       Tutorial(book:"book07", t:"t03",image:"b07t03p18", text: "The Torso" ),
+       Tutorial(book:"book07", t:"t04",image:"b07t04p10", text: "The Arm" ),
+       Tutorial(book:"book07", t:"t05",image:"b07t05p09", text: "The Leg" ),
+       Tutorial(book:"book07", t:"t06",image:"b07t06p11", text: "The Hand" ),
+       Tutorial(book:"book07", t:"t07",image:"b07t07p07", text: "The Foot" ),
 ]
-
-
-
-//<item>Full figure</item> <!--b03t01-->
-//<item>The Head</item> <!--b03t02-->
-//<item>The Torso</item> <!--b03t03-->
-//<item>The Arms</item> <!--b03t04-->
-//<item>The Legs</item> <!--b03t05-->
-//<item>The Hands</item> <!--b03t06-->
-//<item>The Feet</item> <!--b03t07-->
-//<item>Arm Muscle 1</item> <!--b04t01-->
-//<item>Arm Muscle 2</item> <!--b04t02-->
-//<item>Arm Muscle 3</item> <!--b04t03-->
-//<item>Arm Muscle 4</item> <!--b04t04-->
-//<item>Arm Muscle 5</item> <!--b04t05-->
-//<item>Arm Muscle 6</item> <!--b04t06-->
-//<item>Arm Muscle 7</item> <!--b04t07-->
-//<item>Dynamic Kick 1</item> <!--b05t01-->
-//<item>Dynamic Kick 2</item> <!--b05t02-->
-//<item>Dynamic Kick 3</item> <!--b05t03-->
-//<item>Dynamic Kick 4</item> <!--b05t04-->
-//<item>Dynamic Kick 5</item> <!--b05t05-->
-//<item>Dynamic Kick 6</item> <!--b05t06-->
-//<item>Dynamic Kick 7</item> <!--b05t07-->
-//<item>Dynamic Kick 8</item> <!--b05t08-->
-//<item>Full Figure</item> <!--b06t01-->
-//<item>Basic Head</item> <!--b06t02-->
-//<item>Basic Hand</item> <!--b06t03-->
-//<item>Full Figure</item> <!--b07t01-->
-//<item>The Face</item> <!--b07t02-->
-//<item>The Torso</item> <!--b07t03-->
-//<item>The Arm</item> <!--b07t04-->
-//<item>The Leg</item> <!--b07t05-->
-//<item>The Hand</item> <!--b07t06-->
-//<item>The Foot</item> <!--b07t07-->
-
-
-//<item>@drawable/ma3_4figure13</item> <!--b03t01-->
-//<item>@drawable/ma3_4torso13</item>
-//<item>@drawable/ma3_4legs12</item>
-//<item>@drawable/ma3_4head17</item>
-//<item>@drawable/ma3_4hands07</item>
-//<item>@drawable/ma3_4foot07</item>
-//<item>@drawable/ma3_4arms12</item>
-//<item>@drawable/maflexa21</item>  <!--b04t01-->
-//<item>@drawable/maflexb16</item>
-//<item>@drawable/maflexc16</item>
-//<item>@drawable/maflexd18</item>
-//<item>@drawable/maflexe12</item>
-//<item>@drawable/maflexf18</item>
-//<item>@drawable/maflexg16</item>
-//<item>@drawable/midynamickicka0117</item> <!--b05t01-->
-//<item>@drawable/midynamickicka0217</item>
-//<item>@drawable/midynamickicka0317</item>
-//<item>@drawable/midynamickicka0417</item>
-//<item>@drawable/midynamickicka0516</item>
-//<item>@drawable/midynamickicka0617</item>
-//<item>@drawable/midynamickicka0717</item>
-//<item>@drawable/midynamickicka0817</item>
-//<item>@drawable/b06t01p28</item> <!--b06t01-->
-//<item>@drawable/b06t02p14</item> <!--b06t02-->
-//<item>@drawable/b06t03p16</item> <!--b06t03-->
-//<item>@drawable/b07t01p19</item> <!--b07t01-->
-//<item>@drawable/b07t02p22</item> <!--b07t02-->
-//<item>@drawable/b07t03p18</item> <!--b07t03-->
-//<item>@drawable/b07t04p10</item> <!--b07t04-->
-//<item>@drawable/b07t05p09</item> <!--b07t05-->
-//<item>@drawable/b07t06p11</item> <!--b07t06-->
-//<item>@drawable/b07t07p07</item> <!--b07t07-->
-
-
-
-
-
 
 
 
