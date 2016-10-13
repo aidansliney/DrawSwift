@@ -16,14 +16,21 @@ class TutorialViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var helpText: UILabel!
-   
     
-    let book = "b01"
-    let bookLong = "book01"
-    let tutorial = "t01"
+    var passedBook: String?
+    var passedT: String?
+    var passedLength: Int?
+    
+   // var help:[] = bookData
+    
+ 
+    
+    var book = "b01"
+    var bookLong = "book01"
+    var tutorial = "t01"
     var page = "01"
-    let length = 27
-    var counter = 1 // the first is 1
+    var length = 27
+    var counter = 1 // the first page is 1
     var iUS = ""
     let iUE = ".png?alt=media"
     
@@ -31,12 +38,18 @@ class TutorialViewController: UIViewController {
         super.viewDidLoad()
         previousButton.isEnabled = false
         //set the first image
+        bookLong = passedBook!
+        book = "b" + String(bookLong.characters.dropFirst(4))
+        print (book)
+        tutorial = passedT!
+        length = passedLength!
+        
         iUS = "https://firebasestorage.googleapis.com/v0/b/draw-891c7.appspot.com/o/phone%2F"+bookLong+"%2F"
         let url = URL(string: iUS+book+tutorial+"p"+page+iUE)!
         tutorialImage.kf.indicatorType = .activity
         tutorialImage.kf.setImage(with: url)
         //set the first help text
-        helpText.text = b01t01help[0]
+        helpText.text = b01t01Help[0]
         //create array of image NSUrls
         var urls : [NSURL] = [];
         for index in 1...length {
@@ -68,11 +81,18 @@ class TutorialViewController: UIViewController {
 
     @IBAction func nextPage(_ sender: AnyObject) {
         counter += 1
-        helpText.text = b01t01help[counter-1]
+        
+        
+       
+        
+    
+       print( helpTextD["b01t01p01"])
+     
+
+        
         previousButton.isEnabled=true
         page = NSString(format: "%02d", counter) as String
-        
-        
+        helpText.text = helpTextD[book+tutorial+"p"+page]
         let url = URL(string: iUS+book+tutorial+"p"+page+iUE)!
         tutorialImage.kf.indicatorType = .activity
         tutorialImage.kf.setImage(with: url)
@@ -86,9 +106,11 @@ class TutorialViewController: UIViewController {
     
     @IBAction func previousPage(_ sender: AnyObject) {
         counter -= 1
-        helpText.text = b01t01help[counter-1]
+        
+
         nextButton.isEnabled = true
         page = NSString(format: "%02d", counter) as String
+        helpText.text = helpTextD[book+tutorial+"p"+page]
         tutorialImage.image = UIImage(named: book+tutorial+"p"+page)
         let url = URL(string: iUS+book+tutorial+"p"+page+iUE)!
         tutorialImage.kf.indicatorType = .activity

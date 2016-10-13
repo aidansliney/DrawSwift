@@ -24,17 +24,25 @@ struct Book {
     }
 }
 
-
 struct Tutorial {
     var image: String?
     var text: String?
     var book: String?
     var t: String?
+    var level: String?
+    var length: Int?
 
-    init(book: String?,t: String?,image: String?,text: String? ) {
+    init(book: String?,t: String?,image: String?,text: String?,level: String?,length: Int ) {
         self.book = book
         self.t = t
         self.image = image
         self.text = text
+        self.level = level
+        self.length = length
     }
 }
+
+
+
+
+

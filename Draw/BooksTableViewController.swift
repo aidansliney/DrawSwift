@@ -65,6 +65,7 @@ class BooksTableViewController: UITableViewController {
     @IBAction func cancelToPlayersViewController(_ segue:UIStoryboardSegue) {
     }
     
+    //preparing for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toBookDetailSeg" {
             let destinationVC = segue.destination as! BookDetailController
@@ -74,12 +75,12 @@ class BooksTableViewController: UITableViewController {
             destinationVC.passedH1 = passedH1
         }
     }
-    
+    // when a row is selected
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      print (indexPath.row)
      rowSelected = indexPath.row
         let book = self.book[indexPath.row] as Book
-    passedBookname = book.bookname!
+        passedBookname = book.bookname!
         passedLevel = book.level!
         passedImagename = book.cover!
         passedH1 = book.cover!
