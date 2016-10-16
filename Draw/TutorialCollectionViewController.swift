@@ -63,6 +63,10 @@ class TutorialCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt IndexPath: IndexPath )-> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TutorialCell", for: IndexPath as IndexPath)
         
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 2
+        
         let tutorial =  self.tutorial[IndexPath.row] as Tutorial //2
         
         if let nameLabel = cell.viewWithTag(8) as? UILabel { //3

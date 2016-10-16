@@ -22,6 +22,7 @@
 		960F50641DAA9F860091AD2C /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50631DAA9F860091AD2C /* BookDetailController.swift */; };
 		960F50661DAAA2670091AD2C /* TutorialCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */; };
 		960F50681DAC12EB0091AD2C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50671DAC12EB0091AD2C /* TutorialViewController.swift */; };
+		969784B81DB3708000C791B2 /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969784B71DB3708000C791B2 /* myCollectionViewCell.swift */; };
 		96ACE33F1DAD1A1100EAE0B8 /* Pods_DrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96ACE33E1DAD1A1100EAE0B8 /* Pods_DrawTests.framework */; };
 		96ACE3401DAD1A2100EAE0B8 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9604F4421DAD18C100060D23 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		960F50631DAA9F860091AD2C /* BookDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
 		960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewController.swift; sourceTree = "<group>"; };
 		960F50671DAC12EB0091AD2C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		969784B71DB3708000C791B2 /* myCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCollectionViewCell.swift; sourceTree = "<group>"; };
 		96ACE33E1DAD1A1100EAE0B8 /* Pods_DrawTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_DrawTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_DrawTests.framework"; sourceTree = "<group>"; };
 		C57B11910DE0A04DC72F0E7D /* Pods-DrawTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawTests/Pods-DrawTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +156,7 @@
 				960F505D1DAA56FE0091AD2C /* Book.swift */,
 				960F505F1DAA57800091AD2C /* Data.swift */,
 				960F50631DAA9F860091AD2C /* BookDetailController.swift */,
+				969784B71DB3708000C791B2 /* myCollectionViewCell.swift */,
 				960F50671DAC12EB0091AD2C /* TutorialViewController.swift */,
 				960F50301DA900EA0091AD2C /* Assets.xcassets */,
 				960F50321DA900EA0091AD2C /* LaunchScreen.storyboard */,
@@ -384,6 +387,7 @@
 				960F50601DAA57810091AD2C /* Data.swift in Sources */,
 				960F50281DA900EA0091AD2C /* AppDelegate.swift in Sources */,
 				960F505C1DAA56300091AD2C /* BooksTableViewController.swift in Sources */,
+				969784B81DB3708000C791B2 /* myCollectionViewCell.swift in Sources */,
 				960F50641DAA9F860091AD2C /* BookDetailController.swift in Sources */,
 				960F505E1DAA56FE0091AD2C /* Book.swift in Sources */,
 				960F502A1DA900EA0091AD2C /* FirstViewController.swift in Sources */,
