@@ -13,6 +13,7 @@ class BooksTableViewController: UITableViewController {
     var book:[Book] = bookData
     var rowSelected = 0;
     var passedBookname = "book name"
+    var passedTutorial: [Tutorial]?
     var passedLevel = "Level 0"
     var passedImagename = "image"
     var passedH1 = "header"
@@ -73,6 +74,7 @@ class BooksTableViewController: UITableViewController {
             destinationVC.passedLevel = passedLevel
             destinationVC.passedBookname = passedBookname
             destinationVC.passedH1 = passedH1
+            destinationVC.passedTutorial = passedTutorial
         }
     }
     // when a row is selected
@@ -84,6 +86,9 @@ class BooksTableViewController: UITableViewController {
         passedLevel = book.level!
         passedImagename = book.cover!
         passedH1 = book.cover!
+        passedTutorial = book.tutorial!
+        print(book.tutorial!)
+         print("BOOOM")
         performSegue(withIdentifier: "toBookDetailSeg", sender: passedH1)
     }
 

@@ -9,45 +9,46 @@
 import UIKit
 
 class BookDetailController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
-    var items = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48"]
     
-    
-    // MARK: - UICollectionViewDataSource protocol
-    
-    // tell the collection view how many cells to make
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.items.count
-    }
-    
-    // make a cell for each cell index path
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        // get a reference to our storyboard cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! myCollectionViewCell
-        
-        // Use the outlet in our custom class to get a reference to the UILabel in the cell
-        cell.myLabel.text = self.items[indexPath.item]
-        cell.backgroundColor = UIColor.cyan // make cell more visible in our example project
-        cell.layer.borderColor = UIColor.black.cgColor
-        cell.layer.borderWidth = 1
-        cell.layer.cornerRadius = 3
-        
-        return cell
-    }
-    
-    // MARK: - UICollectionViewDelegate protocol
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // handle tap events
-        print("You selected cell #\(indexPath.item)!")
-    }
-
-
+    var tutorial:[Tutorial] = book1Tutorials
+    var passedTutorial: [Tutorial]?
     var passedImagename: String?
     var passedLevel: String?
     var passedBookname: String?
     var passedH1: String?
+    
+    let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
+
+    
+        // Amount of cells
+        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return  passedTutorial!.count
+        }
+        
+        // make a cell for each cell index path
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            
+            // get a reference to our storyboard cell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! myCollectionViewCell
+            let pT =  self.tutorial[indexPath.row] as Draw.Tutorial
+           
+                cell.myLabel.text = pT.text
+                cell.myImage.image = UIImage(named: pT.image!)
+                cell.backgroundColor = UIColor.cyan // make cell more visible in our example project
+                cell.layer.borderWidth = 1
+                cell.layer.cornerRadius = 2
+                return cell
+            
+        }
+        
+        // MARK: - UICollectionViewDelegate protocol
+        
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            // handle tap events
+            print("You selected cell #\(indexPath.item)!")
+        }
+
+
 
     @IBOutlet weak var bookimage: UIImageView!
     @IBOutlet weak var level: UILabel!
@@ -57,12 +58,12 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print ("passed Level" + passedLevel! )
         level.text = passedLevel
         bookname.text = passedBookname
         h1.text = passedH1
         bookimage.image = UIImage(named: passedImagename!)
-
+       
         // Do any additional setup after loading the view.
     }
 
