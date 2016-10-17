@@ -82,14 +82,7 @@ class TutorialViewController: UIViewController {
     @IBAction func nextPage(_ sender: AnyObject) {
         counter += 1
         
-        
-       
-        
-    
        print( helpTextD["b01t01p01"])
-     
-
-        
         previousButton.isEnabled=true
         page = NSString(format: "%02d", counter) as String
         helpText.text = helpTextD[book+tutorial+"p"+page]
@@ -113,6 +106,7 @@ class TutorialViewController: UIViewController {
         helpText.text = helpTextD[book+tutorial+"p"+page]
         tutorialImage.image = UIImage(named: book+tutorial+"p"+page)
         let url = URL(string: iUS+book+tutorial+"p"+page+iUE)!
+        print(url)
         tutorialImage.kf.indicatorType = .activity
         tutorialImage.kf.setImage(with: url)
         

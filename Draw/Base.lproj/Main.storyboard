@@ -216,6 +216,7 @@
                         <outlet property="bookname" destination="bC3-ml-nmt" id="Prj-iF-PCR"/>
                         <outlet property="h1" destination="3BA-T7-Cwt" id="E0O-4i-F0r"/>
                         <outlet property="level" destination="A1S-Jf-BYh" id="HRM-WP-LgS"/>
+                        <segue destination="5z7-7D-VpV" kind="show" identifier="toTutorialDetailFromBookSeg" id="fKD-SZ-GcH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6w-yn-tH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -469,6 +470,6 @@
         <image name="ma3_4torso13" width="413" height="733"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tcd-dn-iIH"/>
+        <segue reference="fKD-SZ-GcH"/>
     </inferredMetricsTieBreakers>
 </document>

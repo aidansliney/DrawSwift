@@ -17,9 +17,16 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     var passedBookname: String?
     var passedH1: String?
     
+    
+    //passing onto to Tutorial
+    var book:[Book] = bookData
+    var rowSelected = 0;
+    var passedBook = "book 01"
+    var passedT = ""
+    var passedLength = 0
+    
     let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
 
-    
         // Amount of cells
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             return  passedTutorial!.count
@@ -38,18 +45,9 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
                 cell.layer.borderWidth = 1
                 cell.layer.cornerRadius = 2
                 return cell
-            
         }
-        
-        // MARK: - UICollectionViewDelegate protocol
-        
-        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            // handle tap events
-            print("You selected cell #\(indexPath.item)!")
-        }
-
-
-
+   
+        //info at the top of the page
     @IBOutlet weak var bookimage: UIImageView!
     @IBOutlet weak var level: UILabel!
     @IBOutlet weak var bookname: UILabel!
@@ -75,14 +73,23 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     @IBAction func cancelToBookDetailViewController(_ segue:UIStoryboardSegue) {
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "toTutorialDetailFromBookSeg" {
+            let destinationVC = segue.destination as! TutorialViewController
+            destinationVC.passedBook = passedBook
+            destinationVC.passedT = passedT
+            destinationVC.passedLength = passedLength
+        }
     }
-    */
+    
+    
+ func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        rowSelected = indexPath.row
+        let pT =  self.tutorial[indexPath.row] as Draw.Tutorial
+        passedBook = pT.book!
+        passedT = pT.t!
+        passedLength = pT.length!
+        performSegue(withIdentifier: "toTutorialDetailFromBookSeg", sender: passedT)
+    }
 
 }
