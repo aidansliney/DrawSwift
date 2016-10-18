@@ -37,8 +37,10 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
             
             // get a reference to our storyboard cell
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! myCollectionViewCell
-            let pT =  self.tutorial[indexPath.row] as Draw.Tutorial
+            let pT =  (self.passedTutorial?[indexPath.row])! as Draw.Tutorial
            
+            
+            print (pT)
                 cell.myLabel.text = pT.text
                 cell.myImage.image = UIImage(named: pT.image!)
                 cell.backgroundColor = UIColor.cyan // make cell more visible in our example project
@@ -73,6 +75,8 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     @IBAction func cancelToBookDetailViewController(_ segue:UIStoryboardSegue) {
     }
     
+    
+    //Preparing to go to the tutorial page
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toTutorialDetailFromBookSeg" {
             let destinationVC = segue.destination as! TutorialViewController
@@ -82,10 +86,10 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         }
     }
     
-    
+    //Go to the tutorial page
  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         rowSelected = indexPath.row
-        let pT =  self.tutorial[indexPath.row] as Draw.Tutorial
+        let pT =  (self.passedTutorial?[indexPath.row])! as Draw.Tutorial
         passedBook = pT.book!
         passedT = pT.t!
         passedLength = pT.length!
