@@ -17,11 +17,13 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     var passedBookname: String?
     var passedH1: String?
     
+    var passedBookNumber = 3
+    
     
     //passing onto to Tutorial
     var book:[Book] = bookData
     var rowSelected = 0;
-    var passedBook = "book 01"
+    var passedBook = "Book 01"
     var passedT = ""
     var passedLength = 0
     

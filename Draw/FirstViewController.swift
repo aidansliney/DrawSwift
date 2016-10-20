@@ -10,16 +10,39 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var topImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        topImage.addGestureRecognizer(tapGesture)
+       
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+   
+    func handleTap(sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "newToBookDetailSeg", sender: sender)
+        print("tap")
+    }
+    
+    //preparing for segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "newToBookDetailSeg" {
+            let destinationVC = segue.destination as! BookDetailController
+            destinationVC.passedImagename = bookData[1].cover
+            destinationVC.passedLevel = bookData[1].level
+            destinationVC.passedBookname = bookData[1].bookname
+            destinationVC.passedH1 = bookData[1].h1
+            
+            destinationVC.passedTutorial = bookData[1].tutorial
+        }
+    }
 
 }
 

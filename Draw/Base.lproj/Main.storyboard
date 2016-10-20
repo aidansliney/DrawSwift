@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b02isocover" translatesAutoresizingMaskIntoConstraints="NO" id="ahw-Ur-tIG">
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b02isocover" translatesAutoresizingMaskIntoConstraints="NO" id="ahw-Ur-tIG">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="j1d-eD-UtO"/>
                                 </constraints>
@@ -33,6 +33,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="New" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="topImage" destination="ahw-Ur-tIG" id="He8-1n-ibv"/>
+                        <segue destination="htC-3D-f4m" kind="show" identifier="newToBookDetailSeg" id="XHX-kh-FMQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -451,6 +455,7 @@
         <image name="ma3_4torso13" width="413" height="733"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="XHX-kh-FMQ"/>
         <segue reference="fKD-SZ-GcH"/>
     </inferredMetricsTieBreakers>
 </document>
