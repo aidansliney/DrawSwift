@@ -72,9 +72,6 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func cancelToBookDetailViewController(_ segue:UIStoryboardSegue) {
-    }
-    
     
     //Preparing to go to the tutorial page
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -96,4 +93,7 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         performSegue(withIdentifier: "toTutorialDetailFromBookSeg", sender: passedT)
     }
 
+    @IBAction func goBack(_ sender: AnyObject) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

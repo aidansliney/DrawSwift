@@ -88,7 +88,7 @@ class TutorialCollectionViewController: UICollectionViewController {
     
     @IBAction func cancelToPlayersViewController(_ segue:UIStoryboardSegue) {
     }
-    
+    //prepare to go to TutorialView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toTutorialDetailSeg" {
             let destinationVC = segue.destination as! TutorialViewController
@@ -98,6 +98,8 @@ class TutorialCollectionViewController: UICollectionViewController {
         }
     }
     
+
+    //go to TutorialView
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         rowSelected = indexPath.row
         let tutorial = self.tutorial[indexPath.row] as Tutorial
@@ -106,45 +108,6 @@ class TutorialCollectionViewController: UICollectionViewController {
         passedLength = tutorial.length!
         performSegue(withIdentifier: "toTutorialDetailSeg", sender: passedT)
     }
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-
-    
     
 
 }

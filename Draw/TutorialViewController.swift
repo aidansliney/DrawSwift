@@ -17,22 +17,20 @@ class TutorialViewController: UIViewController {
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var helpText: UILabel!
     
+    //variables passed by segues
     var passedBook: String?
     var passedT: String?
     var passedLength: Int?
     
-   // var help:[] = bookData
     
- 
-    
-    var book = "b01"
-    var bookLong = "book01"
-    var tutorial = "t01"
+    var book = String()
+    var bookLong = String()
+    var tutorial = String()
     var page = "01"
-    var length = 27
-    var counter = 1 // the first page is 1
-    var iUS = ""
-    let iUE = ".png?alt=media"
+    var length = Int()
+    var counter = 1
+    var iUS = "" // start of Url
+    let iUE = ".png?alt=media" //end of Url
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,12 +38,14 @@ class TutorialViewController: UIViewController {
         //set the first image
         bookLong = passedBook!
         book = "b" + String(bookLong.characters.dropFirst(4))
-        print (book)
+        print ("book" + book)
         tutorial = passedT!
+        print ("passedT" + passedT!)
         length = passedLength!
-        
+        print (passedLength!)
+    
         iUS = "https://firebasestorage.googleapis.com/v0/b/draw-891c7.appspot.com/o/phone%2F"+bookLong+"%2F"
-        let url = URL(string: iUS+book+tutorial+"p"+page+iUE)!
+        let url = URL(string: iUS+book+tutorial+"p01"+iUE)!
         tutorialImage.kf.indicatorType = .activity
         tutorialImage.kf.setImage(with: url)
         //set the first help text
@@ -60,7 +60,6 @@ class TutorialViewController: UIViewController {
         //prefetch the images
         let prefetcher = ImagePrefetcher(urls: urls as [URL])
         prefetcher.start()
- 
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,21 +67,8 @@ class TutorialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     @IBAction func nextPage(_ sender: AnyObject) {
         counter += 1
-        
-       print( helpTextD["b01t01p01"])
         previousButton.isEnabled=true
         page = NSString(format: "%02d", counter) as String
         helpText.text = helpTextD[book+tutorial+"p"+page]
@@ -90,23 +76,17 @@ class TutorialViewController: UIViewController {
         tutorialImage.kf.indicatorType = .activity
         tutorialImage.kf.setImage(with: url)
         
-        //tutorialImage.image = UIImage(named: book+tutorial+"p"+page)
-        print(book+tutorial+"p"+String(page))
-        
         if counter == length{
             nextButton.isEnabled=false}
     }
     
     @IBAction func previousPage(_ sender: AnyObject) {
         counter -= 1
-        
-
         nextButton.isEnabled = true
         page = NSString(format: "%02d", counter) as String
         helpText.text = helpTextD[book+tutorial+"p"+page]
         tutorialImage.image = UIImage(named: book+tutorial+"p"+page)
         let url = URL(string: iUS+book+tutorial+"p"+page+iUE)!
-        print(url)
         tutorialImage.kf.indicatorType = .activity
         tutorialImage.kf.setImage(with: url)
         
@@ -122,5 +102,8 @@ class TutorialViewController: UIViewController {
         print("Left")
     }
     
+    @IBAction func goBack(_ sender: AnyObject) {
+        navigationController?.popViewController(animated: true)
+    }
     
 }

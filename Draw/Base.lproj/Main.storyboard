@@ -51,7 +51,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="452"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ije-la-1Vu" id="08D-B7-Ynf">
-                                    <frame key="frameInset" width="375" height="451"/>
+                                    <frame key="frameInset" width="375" height="451.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Hpx-ek-qCE">
@@ -207,7 +207,7 @@
                     <navigationItem key="navigationItem" title="Book Detail" id="K3z-Bg-pD2">
                         <barButtonItem key="leftBarButtonItem" title="back" id="V8g-U9-HSM">
                             <connections>
-                                <segue destination="aeH-rM-Iuu" kind="unwind" unwindAction="cancelToBookDetailViewController:" id="mAw-9v-Nke"/>
+                                <action selector="goBack:" destination="htC-3D-f4m" id="d8a-2A-EQm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -220,7 +220,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6w-yn-tH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="aeH-rM-Iuu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-60" y="1870.6146926536733"/>
         </scene>
@@ -288,7 +287,7 @@
                     <navigationItem key="navigationItem" id="Tmk-qg-pjd">
                         <barButtonItem key="leftBarButtonItem" title="back" id="CIi-H3-zIY">
                             <connections>
-                                <segue destination="b6c-h5-8uZ" kind="unwind" unwindAction="cancelToBookDetailViewControllerWithSegue:" id="1EQ-rI-pPU"/>
+                                <action selector="goBack:" destination="5z7-7D-VpV" id="LvB-dp-UDN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -312,7 +311,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="743.20000000000005" y="1893.1034482758623"/>
+            <point key="canvasLocation" x="758" y="1871"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -442,24 +441,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNf-HY-ytW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="825" y="258"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="epv-A3-c87">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OW5-MM-j2b" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mU7-5n-SYn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="5z7-7D-VpV" kind="relationship" relationship="rootViewController" id="ENL-Vl-Mw5"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gXy-UG-IlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="241" y="2667"/>
         </scene>
     </scenes>
     <resources>
