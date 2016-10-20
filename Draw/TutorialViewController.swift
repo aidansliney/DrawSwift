@@ -49,7 +49,7 @@ class TutorialViewController: UIViewController {
         tutorialImage.kf.indicatorType = .activity
         tutorialImage.kf.setImage(with: url)
         //set the first help text
-        helpText.text = b01t01Help[0]
+        helpText.text = helpTextD[book+tutorial+"p01"]
         //create array of image NSUrls
         var urls : [NSURL] = [];
         for index in 1...length {
