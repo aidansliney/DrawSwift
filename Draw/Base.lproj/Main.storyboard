@@ -32,7 +32,7 @@
                             <constraint firstItem="ahw-Ur-tIG" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="nyd-aU-msh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="New" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" title="New" id="rez-7D-A7K"/>
                     <connections>
                         <outlet property="topImage" destination="ahw-Ur-tIG" id="He8-1n-ibv"/>
                         <segue destination="htC-3D-f4m" kind="show" identifier="newToBookDetailSeg" id="XHX-kh-FMQ"/>
@@ -40,9 +40,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-839.20000000000005" y="257.72113943028489"/>
+            <point key="canvasLocation" x="-839" y="1047"/>
         </scene>
-        <!--  -->
+        <!--  Books-->
         <scene sceneID="nly-Ei-hbY">
             <objects>
                 <tableViewController id="g7w-4Y-Q0H" customClass="BooksTableViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="452"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ije-la-1Vu" id="08D-B7-Ynf">
-                                    <frame key="frameInset" width="375" height="451.5"/>
+                                    <frame key="frameInset" width="375" height="451"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Hpx-ek-qCE">
@@ -106,18 +106,7 @@
                             <outlet property="delegate" destination="g7w-4Y-Q0H" id="aUI-r0-K0R"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="  " id="Ukw-z1-tlK">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="xoy-Zf-gnr">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ULG-Tn-Xe4">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="goBack:" destination="g7w-4Y-Q0H" eventType="touchUpInside" id="Yr1-O5-XFi"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="  Books" id="Ukw-z1-tlK"/>
                     <connections>
                         <segue destination="htC-3D-f4m" kind="show" identifier="toBookDetailSeg" id="JTw-tT-f88"/>
                     </connections>
@@ -339,7 +328,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="S1M-io-oSC" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="AYs-Jz-vrj" kind="relationship" relationship="viewControllers" id="dTx-91-5WP"/>
                         <segue destination="5Pl-4s-iBz" kind="relationship" relationship="viewControllers" id="06E-FT-N24"/>
                     </connections>
@@ -365,7 +354,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLc-Gb-r1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-58" y="258"/>
+            <point key="canvasLocation" x="-58" y="326"/>
         </scene>
         <!--Tutorials-->
         <scene sceneID="FJo-HX-TCX">
@@ -455,7 +444,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNf-HY-ytW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="258"/>
+            <point key="canvasLocation" x="860" y="258"/>
+        </scene>
+        <!--New-->
+        <scene sceneID="i9Q-1u-hgK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S1M-io-oSC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="New" image="first" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kZb-wQ-hgR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="8gQ-Q6-FMm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lr0-Hp-WOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-839.20000000000005" y="257.72113943028489"/>
         </scene>
     </scenes>
     <resources>
@@ -466,7 +474,7 @@
         <image name="ma3_4torso13" width="413" height="733"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Tcd-dn-iIH"/>
         <segue reference="JTw-tT-f88"/>
-        <segue reference="fKD-SZ-GcH"/>
     </inferredMetricsTieBreakers>
 </document>
