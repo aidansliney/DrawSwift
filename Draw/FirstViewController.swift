@@ -7,16 +7,26 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var welcome: UILabel!
+    @IBOutlet weak var playerView: UIView!
+    @IBOutlet weak var playVideo: UIImageView!
+    
     @IBOutlet weak var topImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         topImage.addGestureRecognizer(tapGesture)
+        
+        let tapGestureVideo = UITapGestureRecognizer(target: self, action: #selector(handleTapVideo))
+        playVideo.addGestureRecognizer(tapGestureVideo)
         
         // Do any additional setup after loading the view.
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
@@ -25,6 +35,7 @@ class FirstViewController: UIViewController {
         imageView.image = image
         navigationItem.titleView = imageView
        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +48,18 @@ class FirstViewController: UIViewController {
         performSegue(withIdentifier: "newToBookDetailSeg", sender: sender)
         print("tap")
     }
+    
+    func handleTapVideo(sender: UITapGestureRecognizer) {
+        print("tapVideo")
+        let videoURL = NSURL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")
+        let player = AVPlayer(url: videoURL! as URL)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        self.present(playerViewController, animated: true) {
+            playerViewController.player!.play()
+        }
+    }
+    
     
     //preparing for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
