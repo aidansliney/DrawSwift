@@ -31,6 +31,11 @@ class TutorialCollectionViewController: UICollectionViewController {
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "baricon")
+        imageView.image = image
+        navigationItem.titleView = imageView
     }
 
     override func didReceiveMemoryWarning() {

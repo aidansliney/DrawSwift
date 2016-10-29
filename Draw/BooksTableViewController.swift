@@ -26,6 +26,13 @@ class BooksTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        // Do any additional setup after loading the view.
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "baricon")
+        imageView.image = image
+        navigationItem.titleView = imageView
     }
 
     override func didReceiveMemoryWarning() {

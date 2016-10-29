@@ -17,6 +17,13 @@ class FirstViewController: UIViewController {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         topImage.addGestureRecognizer(tapGesture)
+        
+        // Do any additional setup after loading the view.
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "baricon")
+        imageView.image = image
+        navigationItem.titleView = imageView
        
     }
 

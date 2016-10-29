@@ -25,7 +25,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ahw-Ur-tIG" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="51" id="1Xp-nA-lfy"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ahw-Ur-tIG" secondAttribute="bottom" constant="340" id="5Nd-FT-7ln"/>
@@ -99,6 +99,7 @@
                                         <constraint firstItem="ktM-9n-mnB" firstAttribute="top" secondItem="Hpx-ek-qCE" secondAttribute="bottom" constant="87" id="wod-By-S0n"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -343,9 +344,13 @@
                 <navigationController title="Books" automaticallyAdjustsScrollViewInsets="NO" id="AYs-Jz-vrj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Books" id="FfD-U3-CXs"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tr0-fS-5Pj">
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" misplaced="YES" id="tr0-fS-5Pj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -360,7 +365,7 @@
         <scene sceneID="FJo-HX-TCX">
             <objects>
                 <collectionViewController title="Tutorials" id="Uv4-K9-Rgr" customClass="TutorialCollectionViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" id="b9S-bL-FPb">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" dataMode="prototypes" id="b9S-bL-FPb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.9219981206513439" green="0.9219981206513439" blue="0.9219981206513439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -425,7 +430,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7z7-Iz-AYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="823.20000000000005" y="992.65367316341838"/>
+            <point key="canvasLocation" x="860" y="994"/>
         </scene>
         <!--Tutorials-->
         <scene sceneID="Cc9-dF-u2j">
@@ -433,9 +438,10 @@
                 <navigationController title="Tutorials" automaticallyAdjustsScrollViewInsets="NO" id="5Pl-4s-iBz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tutorials" image="first" id="bQt-lH-p3N"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mh2-la-ehB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Mh2-la-ehB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -452,9 +458,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S1M-io-oSC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="New" image="first" id="acW-dT-cKf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kZb-wQ-hgR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kZb-wQ-hgR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
