@@ -3,13 +3,13 @@
 //Set up sample data
 
 let bookData = [
-    Book(bookname:"book01", level:"Tic-Tac-Toe",h1:"Learn howhero", rating: 4, cover: "b01isocover", tutorial: book1Tutorials),
-    Book(bookname: "book02", level: "Spin the",h1:"Learn uperhero", rating: 5, cover: "b02isocover", tutorial: book2Tutorials),
-    Book(bookname: "book03", level: "Texas Hold 'em Poker",h1:"Learn hosuperhero", rating: 2, cover: "b03isocover", tutorial: book3Tutorials),
-    Book(bookname:"book04", level:"Tic-Tac-Toe",h1:"Learn how to draw erhero", rating: 4, cover: "b04isocover", tutorial: book4Tutorials),
-    Book(bookname: "book05", level: "Spin the Bottle",h1:"Learn how  superhero", rating: 5, cover: "b05isocover", tutorial: book5Tutorials),
-    Book(bookname: "book06", level: "Texas Hold 'em Poker",h1:"Learn howsuperhero", rating: 2, cover: "b06isocover", tutorial: book6Tutorials),
-    Book(bookname:"book07", level:"Tic-Tac-Toe",h1:"Learn how to draw arhero", rating: 4, cover: "b07isocover", tutorial: book7Tutorials)]
+    Book(bookname:"book01", level:"Tic-Tac-Toe",h1:"Learn howhero", rating: 4, cover: "b01isocover", banner: "b03banner", tutorial: book1Tutorials ),
+    Book(bookname: "book02", level: "Spin the",h1:"Learn uperhero", rating: 5, cover: "b02isocover", banner: "b03banner", tutorial: book2Tutorials),
+    Book(bookname: "book03", level: "Texas Hold 'em Poker",h1:"Learn hosuperhero", rating: 2, cover: "b03isocover",banner: "b01banner", tutorial: book3Tutorials),
+    Book(bookname:"book04", level:"Tic-Tac-Toe",h1:"Learn how to draw erhero", rating: 4, cover: "b04isocover",banner: "b03banner", tutorial: book4Tutorials),
+    Book(bookname: "book05", level: "Spin the Bottle",h1:"Learn how  superhero", rating: 5, cover: "b05isocover",banner: "b03banner", tutorial: book5Tutorials),
+    Book(bookname: "book06", level: "Texas Hold 'em Poker",h1:"Learn howsuperhero", rating: 2, cover: "b06isocover",banner: "b01banner", tutorial: book6Tutorials),
+    Book(bookname:"book07", level:"Tic-Tac-Toe",h1:"Learn how to draw arhero", rating: 4, cover: "b07isocover",banner: "b03banner", tutorial: book7Tutorials)]
 
 let book1Tutorials = [
     Tutorial(book:"book01", t:"t01", image:"b01t01p29", text: "Full Figure",level: "Level 1",length: 29 ),

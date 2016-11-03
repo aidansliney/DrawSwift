@@ -10,20 +10,23 @@ import UIKit
 
 class BookDetailController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    
+    //passed here
     var tutorial:[Tutorial] = book1Tutorials
     var passedTutorial: [Tutorial]?
     var passedImagename: String?
     var passedLevel: String?
     var passedBookname: String?
     var passedH1: String?
+    var passedBanner: String?
     
-    var passedBookNumber = 3
     
     
     //passing onto to Tutorial
     var book:[Book] = bookData
     var rowSelected = 0;
     var passedBook = "Book 01"
+    var passedBookNumber = 3
     var passedT = ""
     var passedLength = 0
     
@@ -45,9 +48,11 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
             print (pT)
                 cell.myLabel.text = pT.text
                 cell.myImage.image = UIImage(named: pT.image!)
-                cell.backgroundColor = UIColor.cyan // make cell more visible in our example project
-                cell.layer.borderWidth = 1
-                cell.layer.cornerRadius = 2
+         
+            
+            cell.layer.borderColor = UIColor( red: 50/255, green: 50/255, blue:50/255, alpha: 0.3 ).cgColor
+            cell.layer.borderWidth = 0.3
+            cell.layer.cornerRadius = 2
                 return cell
         }
    
@@ -61,10 +66,11 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
         print ("passed Level" + passedLevel! )
-        level.text = passedLevel
+      //  level.text = passedLevel
         bookname.text = passedBookname
-        h1.text = passedH1
-        bookimage.image = UIImage(named: passedImagename!)
+       // h1.text = passedH1
+        bookimage.image = UIImage(named: passedBanner!)
+        print(passedBanner)
        
         // Do any additional setup after loading the view.
     }

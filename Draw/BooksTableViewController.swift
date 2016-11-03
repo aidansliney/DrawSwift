@@ -16,7 +16,9 @@ class BooksTableViewController: UITableViewController {
     var passedTutorial: [Tutorial]?
     var passedLevel = "Level 0"
     var passedImagename = "image"
+    var passedBanner = "banner"
     var passedH1 = "header"
+    var passedBookNumber = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,6 +84,8 @@ class BooksTableViewController: UITableViewController {
             destinationVC.passedBookname = passedBookname
             destinationVC.passedH1 = passedH1
             destinationVC.passedTutorial = passedTutorial
+            destinationVC.passedBookNumber = passedBookNumber
+            destinationVC.passedBanner = passedBanner
         }
     }
     // when a row is selected
@@ -89,9 +93,11 @@ class BooksTableViewController: UITableViewController {
      print (indexPath.row)
      rowSelected = indexPath.row
         let book = self.book[indexPath.row] as Book
+        passedBookNumber = indexPath.row
         passedBookname = book.bookname!
         passedLevel = book.level!
         passedImagename = book.cover!
+        passedBanner = book.banner!
         passedH1 = book.cover!
         passedTutorial = book.tutorial!
         print(book.tutorial!)

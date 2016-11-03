@@ -14,15 +14,17 @@ struct Book {
     var h1: String?
     var rating: Int
     var cover: String?
+    var banner: String?
     var tutorial: [Tutorial]?
     
     
-    init(bookname: String?, level: String?, h1: String?,rating: Int, cover: String?, tutorial: [Tutorial]? ) {
+    init(bookname: String?, level: String?, h1: String?,rating: Int, cover: String?, banner: String?, tutorial: [Tutorial]? ) {
         self.bookname = bookname
         self.level = level
         self.h1 = h1
         self.rating = rating
         self.cover = cover
+        self.banner = banner
         self.tutorial = tutorial
     }
 }
