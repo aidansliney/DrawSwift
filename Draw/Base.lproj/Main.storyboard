@@ -60,7 +60,7 @@
                                                 <string key="text">Welcone to Learn How to Draw
 Check out the Books tab to find our Classes
 Or the Tutorials tab for individual lessons</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -78,7 +78,7 @@ Or the Tutorials tab for individual lessons</string>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GE9-lE-26r">
                                                         <string key="text">Will Sliney is an award winning and best selling comics artist and writer from Cork. Will is best known for his work on Marvels Spider-Man 2099, Fearless Defenders and Star Wars.</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -191,7 +191,7 @@ Or the Tutorials tab for individual lessons</string>
                                 <rect key="frame" x="0.0" y="92" width="375" height="529"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ije-la-1Vu" id="08D-B7-Ynf">
-                                    <frame key="frameInset" width="375" height="528.5"/>
+                                    <frame key="frameInset" width="375" height="528"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sj7-ds-kez" userLabel="Card View">
@@ -312,8 +312,8 @@ Or the Tutorials tab for individual lessons</string>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="1lJ-fX-Nt2"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Im8-IV-faY" userLabel="Bar">
@@ -606,8 +606,8 @@ Or the Tutorials tab for individual lessons</string>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="0sr-jB-w3H"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" red="0.74374763490004858" green="0.74374763490004858" blue="0.74374763490004858" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Level 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ut-db-7Q4">
@@ -718,6 +718,6 @@ Or the Tutorials tab for individual lessons</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XHX-kh-FMQ"/>
-        <segue reference="fKD-SZ-GcH"/>
+        <segue reference="Tcd-dn-iIH"/>
     </inferredMetricsTieBreakers>
 </document>
