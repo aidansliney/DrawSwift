@@ -191,7 +191,7 @@ Or the Tutorials tab for individual lessons</string>
                                 <rect key="frame" x="0.0" y="92" width="375" height="529"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ije-la-1Vu" id="08D-B7-Ynf">
-                                    <frame key="frameInset" width="375" height="528"/>
+                                    <frame key="frameInset" width="375" height="528.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sj7-ds-kez" userLabel="Card View">
@@ -413,7 +413,7 @@ Or the Tutorials tab for individual lessons</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6w-yn-tH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-58" y="1858"/>
+            <point key="canvasLocation" x="-58" y="1673"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="an4-qI-mnz">
@@ -531,7 +531,7 @@ Or the Tutorials tab for individual lessons</string>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-58" y="2940"/>
+            <point key="canvasLocation" x="-58" y="2550"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
