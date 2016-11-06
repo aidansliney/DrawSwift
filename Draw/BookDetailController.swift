@@ -20,8 +20,6 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     var passedH1: String?
     var passedBanner: String?
     
-    
-    
     //passing onto to Tutorial
     var book:[Book] = bookData
     var rowSelected = 0;
@@ -29,6 +27,10 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     var passedBookNumber = 3
     var passedT = ""
     var passedLength = 0
+    
+    // Title
+    @IBOutlet weak var bookTitle: UINavigationItem!
+    
     
     let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
 
@@ -66,8 +68,8 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
         print ("passed Level" + passedLevel! )
-      //  level.text = passedLevel
-        bookname.text = passedBookname
+
+        self.navigationItem.title = passedBookname
        // h1.text = passedH1
         bookimage.image = UIImage(named: passedBanner!)
         print(passedBanner)
