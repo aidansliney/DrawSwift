@@ -204,6 +204,7 @@ Or the Tutorials tab for individual lessons</string>
                     <connections>
                         <outlet property="playVideo" destination="qE8-Fm-5MG" id="3em-xJ-8Gq"/>
                         <outlet property="topImage" destination="ahw-Ur-tIG" id="He8-1n-ibv"/>
+                        <outlet property="topTitle" destination="Vn2-jl-lTP" id="gbq-jj-xr0"/>
                         <outlet property="tutorialImage" destination="hFL-BI-Zdi" id="hbD-in-i2q"/>
                         <outlet property="welcome" destination="doM-Dv-KyV" id="49Y-dd-IzB"/>
                         <segue destination="htC-3D-f4m" kind="show" identifier="newToBookDetailSeg" id="XHX-kh-FMQ"/>

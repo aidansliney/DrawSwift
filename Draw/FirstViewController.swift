@@ -18,28 +18,37 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var playerView: UIView!
     @IBOutlet weak var playVideo: UIImageView!
     @IBOutlet weak var tutorialImage: UIImageView!
-    
+    //top card
     @IBOutlet weak var topImage: UIImageView!
+    @IBOutlet weak var topTitle: UILabel!
+    
+    // pull in books tutorial
+    var book:[Book] = bookData
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
         
+        // Prepare images for tapping
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        topImage.addGestureRecognizer(tapGesture)
-        
         let tapGestureVideo = UITapGestureRecognizer(target: self, action: #selector(handleTapVideo))
-        playVideo.addGestureRecognizer(tapGestureVideo)
-        
         let tapGestureTutorial = UITapGestureRecognizer(target: self, action: #selector(handleTapTutorial))
+        topImage.addGestureRecognizer(tapGesture)
+        playVideo.addGestureRecognizer(tapGestureVideo)
         tutorialImage.addGestureRecognizer(tapGestureTutorial)
         
-        // Do any additional setup after loading the view.
+        // Icon in the bar
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
         imageView.contentMode = .scaleAspectFit
         let image = UIImage(named: "baricon")
         imageView.image = image
         navigationItem.titleView = imageView
+        
+        
+        // Set top card
+        let book = self.book[homeTopBook] as Book
+        topImage.image = UIImage(named:book.cover!)
+        topTitle.text = book.title
        
 
     }
@@ -62,10 +71,7 @@ class FirstViewController: UIViewController {
     
     func handleTapVideo(sender: UITapGestureRecognizer) {
         print("tapVideo")
-
-        
-         let path = Bundle.main.path(forResource: "video", ofType:"mp4")
-        
+        let path = Bundle.main.path(forResource: "video", ofType:"mp4")
         let player = AVPlayer(url: NSURL(fileURLWithPath: path!) as URL)
         let playerViewController = AVPlayerViewController()
         playerViewController.player = player
@@ -79,12 +85,8 @@ class FirstViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "newToBookDetailSeg" {
             let destinationVC = segue.destination as! BookDetailController
-            destinationVC.passedImagename = bookData[1].cover
-            destinationVC.passedLevel = bookData[1].level
-            destinationVC.passedBookname = bookData[1].bookname
-           
-            destinationVC.passedBanner = bookData[1].banner
-            destinationVC.passedTutorial = bookData[1].tutorial
+            destinationVC.passedBookNumber = homeTopBook
+
         }
         //Tutorial segue
         if segue.identifier == "toTutorialDetailFromTutCardSeg" {

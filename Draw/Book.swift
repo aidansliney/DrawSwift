@@ -10,15 +10,15 @@ import UIKit
 
 struct Book {
     var bookname: String?
-    var level: String?
+    var title: String?
     var cover: String?
     var banner: String?
     var tutorial: [Tutorial]?
     
     
-    init(bookname: String?, level: String?,  cover: String?, banner: String?, tutorial: [Tutorial]? ) {
+    init(bookname: String?, title: String?,  cover: String?, banner: String?, tutorial: [Tutorial]? ) {
         self.bookname = bookname
-        self.level = level
+        self.title = title
     
         self.cover = cover
         self.banner = banner

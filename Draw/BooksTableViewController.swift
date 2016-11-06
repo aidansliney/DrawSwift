@@ -59,7 +59,7 @@ class BooksTableViewController: UITableViewController {
             nameLabel.text = book.bookname
         }
         if let levelLabel = cell.viewWithTag(101) as? UILabel {
-            levelLabel.text = book.level
+            levelLabel.text = book.title
         }
         
         
@@ -76,29 +76,14 @@ class BooksTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toBookDetailSeg" {
             let destinationVC = segue.destination as! BookDetailController
-            destinationVC.passedImagename = passedImagename
-            destinationVC.passedLevel = passedLevel
-            destinationVC.passedBookname = passedBookname
-            destinationVC.passedH1 = passedH1
-            destinationVC.passedTutorial = passedTutorial
             destinationVC.passedBookNumber = passedBookNumber
-            destinationVC.passedBanner = passedBanner
+           
         }
     }
     // when a row is selected
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-     print (indexPath.row)
      rowSelected = indexPath.row
-        let book = self.book[indexPath.row] as Book
         passedBookNumber = indexPath.row
-        passedBookname = book.bookname!
-        passedLevel = book.level!
-        passedImagename = book.cover!
-        passedBanner = book.banner!
-        passedH1 = book.cover!
-        passedTutorial = book.tutorial!
-        print(book.tutorial!)
-         print("BOOOM")
         performSegue(withIdentifier: "toBookDetailSeg", sender: passedH1)
     }
 
