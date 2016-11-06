@@ -321,7 +321,7 @@ Or the Tutorials tab for individual lessons</string>
                         <viewControllerLayoutGuide type="bottom" id="7aN-2k-zDo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kgY-MQ-754">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="636"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="coF-3T-88H">
@@ -415,12 +415,13 @@ Or the Tutorials tab for individual lessons</string>
                     </view>
                     <navigationItem key="navigationItem" title="Book Detail" id="K3z-Bg-pD2">
                         <barButtonItem key="leftBarButtonItem" title="back" id="V8g-U9-HSM">
-                            <color key="tintColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="goBack:" destination="htC-3D-f4m" id="d8a-2A-EQm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="700"/>
                     <connections>
@@ -441,7 +442,7 @@ Or the Tutorials tab for individual lessons</string>
                         <viewControllerLayoutGuide type="bottom" id="EAu-Xb-bTQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GOV-W1-him">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b01t01p01" translatesAutoresizingMaskIntoConstraints="NO" id="HCE-Jg-4JW">
@@ -575,7 +576,7 @@ Or the Tutorials tab for individual lessons</string>
                 <navigationController title="Books" automaticallyAdjustsScrollViewInsets="NO" id="AYs-Jz-vrj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Books" image="lit" id="FfD-U3-CXs"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" id="tr0-fS-5Pj">
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" misplaced="YES" id="tr0-fS-5Pj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -737,7 +738,7 @@ Or the Tutorials tab for individual lessons</string>
         <image name="videothumb" width="852" height="479"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XHX-kh-FMQ"/>
-        <segue reference="Tcc-u9-rWb"/>
+        <segue reference="JTw-tT-f88"/>
+        <segue reference="fKD-SZ-GcH"/>
     </inferredMetricsTieBreakers>
 </document>

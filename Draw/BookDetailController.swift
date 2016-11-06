@@ -47,7 +47,21 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         bookimage.image = UIImage(named: passedBanner!)
         
         //set Nav bar color
-        navigationController?.navigationBar.barTintColor = UIColor( red: 255/255, green: 163/255, blue:155/255, alpha: 1.0 )
+        
+        if book.level == 1
+        {
+            navigationController?.navigationBar.barTintColor = UIColor( red: 255/255, green: 80/255, blue:80/255, alpha: 0.5 )
+        }
+        
+        if book.level == 2
+        {
+            navigationController?.navigationBar.barTintColor = UIColor( red: 80/255, green: 255/255, blue:80/255, alpha: 0.5 )
+        }
+        
+        if book.level == 3
+        {
+            navigationController?.navigationBar.barTintColor = UIColor( red: 80/255, green: 80/255, blue:255/255, alpha: 0.5 )
+        }
         
     }
     
