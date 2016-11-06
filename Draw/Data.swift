@@ -5,14 +5,14 @@
 let homeTopBook = 3
 
 let bookData = [
-    Book(bookname:"book 01", title:"Heroic Male Beginners ¾ View",  cover: "b01isocover", banner: "b03banner", tutorial: book1Tutorials ),
-    Book(bookname: "book 02", title: "Heroic Male Intermediate ¾ View",  cover: "b02isocover", banner: "b03banner", tutorial: book2Tutorials),
-    Book(bookname: "book 03", title: "Heroic Male Advanced ¾ View",  cover: "b03isocover",banner: "b01banner", tutorial: book3Tutorials),
-    Book(bookname:"book 04", title:"Arm Muscles",  cover: "b04isocover",banner: "b03banner", tutorial: book4Tutorials),
-    Book(bookname: "book 05", title: "Dynamic Kicking",  cover: "b05isocover",banner: "b03banner", tutorial: book5Tutorials),
-    Book(bookname: "book 06", title: "Heroic Male Beginners Front View",  cover: "b06isocover",banner: "b01banner", tutorial: book6Tutorials),
-    Book(bookname:"book 07", title:"Heroic Male Intermediate Front View",  cover: "b07isocover",banner: "b03banner", tutorial: book7Tutorials),
-    Book(bookname:"book 08", title:"Face Front View",  cover: "b07isocover",banner: "b03banner", tutorial: book7Tutorials)]
+    Book(bookname:"book 01",level: 1, title:"Heroic Male Beginners ¾ View",  cover: "b01isocover", banner: "b03banner", tutorial: book1Tutorials ),
+    Book(bookname: "book 02",level: 2, title: "Heroic Male Intermediate ¾ View",  cover: "b02isocover", banner: "b03banner", tutorial: book2Tutorials),
+    Book(bookname: "book 03",level: 3, title: "Heroic Male Advanced ¾ View",  cover: "b03isocover",banner: "b01banner", tutorial: book3Tutorials),
+    Book(bookname:"book 04",level: 1, title:"Arm Muscles",  cover: "b04isocover",banner: "b03banner", tutorial: book4Tutorials),
+    Book(bookname: "book 05",level: 2, title: "Dynamic Kicking",  cover: "b05isocover",banner: "b03banner", tutorial: book5Tutorials),
+    Book(bookname: "book 06",level: 3, title: "Heroic Male Beginners Front View",  cover: "b06isocover",banner: "b01banner", tutorial: book6Tutorials),
+    Book(bookname:"book 07",level: 1, title:"Heroic Male Intermediate Front View",  cover: "b07isocover",banner: "b03banner", tutorial: book7Tutorials),
+    Book(bookname:"book 08",level: 2, title:"Face Front View",  cover: "b07isocover",banner: "b03banner", tutorial: book7Tutorials)]
 
 
 let book0Tutorials = [

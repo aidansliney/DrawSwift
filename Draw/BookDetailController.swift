@@ -24,11 +24,10 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     
     //passing onto to Tutorial
     var book:[Book] = bookData
-    var rowSelected = 0;
+    var rowSelected: Int?
     var passedBook = "Book 01"
     var passedT = ""
     var passedLength = 0
-    
     
     
     override func viewDidLoad() {
@@ -46,6 +45,9 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         //set title and image
         self.navigationItem.title = passedBookname
         bookimage.image = UIImage(named: passedBanner!)
+        
+        //set Nav bar color
+        navigationController?.navigationBar.barTintColor = UIColor( red: 255/255, green: 163/255, blue:155/255, alpha: 1.0 )
         
     }
     

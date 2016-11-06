@@ -10,16 +10,17 @@ import UIKit
 
 struct Book {
     var bookname: String?
+    var level: Int?
     var title: String?
     var cover: String?
     var banner: String?
     var tutorial: [Tutorial]?
     
     
-    init(bookname: String?, title: String?,  cover: String?, banner: String?, tutorial: [Tutorial]? ) {
+    init(bookname: String?, level: Int?, title: String?,  cover: String?, banner: String?, tutorial: [Tutorial]? ) {
         self.bookname = bookname
         self.title = title
-    
+        self.level = level
         self.cover = cover
         self.banner = banner
         self.tutorial = tutorial
