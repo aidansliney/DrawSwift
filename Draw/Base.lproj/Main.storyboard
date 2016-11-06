@@ -543,7 +543,7 @@ Or the Tutorials tab for individual lessons</string>
                         <action selector="Swipe:" destination="5z7-7D-VpV" id="ayr-hR-7Dj"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="l1x-Ap-Jbb">
+                <swipeGestureRecognizer direction="left" id="l1x-Ap-Jbb" userLabel="Swipe Left">
                     <connections>
                         <action selector="SwipeLeft:" destination="5z7-7D-VpV" id="eBY-wD-YB3"/>
                     </connections>

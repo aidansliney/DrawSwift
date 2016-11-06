@@ -17,6 +17,10 @@ class TutorialViewController: UIViewController {
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var helpText: UILabel!
     
+    
+    
+    //swipe
+    
     @IBOutlet var background: UIView!
     //variables passed by segues
     var passedBook: String?
@@ -34,7 +38,24 @@ class TutorialViewController: UIViewController {
     let iUE = ".png?alt=media" //end of Url
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        self.view.addGestureRecognizer(swipeLeft)
+        
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeDown.direction = UISwipeGestureRecognizerDirection.down
+        self.view.addGestureRecognizer(swipeDown)
+        
+        
         
         //set color for tutorial
         
@@ -80,19 +101,16 @@ class TutorialViewController: UIViewController {
     }
     
     @IBAction func nextPage(_ sender: AnyObject) {
-        counter += 1
-        previousButton.isEnabled=true
-        page = NSString(format: "%02d", counter) as String
-        helpText.text = helpTextD[book+tutorial+"p"+page]
-        let url = URL(string: iUS+book+tutorial+"p"+page+iUE)!
-        tutorialImage.kf.indicatorType = .activity
-        tutorialImage.kf.setImage(with: url)
-        
-        if counter == length{
-            nextButton.isEnabled=false}
+        nextPage()
+       
     }
     
     @IBAction func previousPage(_ sender: AnyObject) {
+            previousPage()
+    }
+    
+    
+    func previousPage(){
         counter -= 1
         nextButton.isEnabled = true
         page = NSString(format: "%02d", counter) as String
@@ -106,6 +124,23 @@ class TutorialViewController: UIViewController {
             previousButton.isEnabled=false}
     }
     
+    
+    func nextPage(){
+        counter += 1
+        previousButton.isEnabled=true
+        page = NSString(format: "%02d", counter) as String
+        helpText.text = helpTextD[book+tutorial+"p"+page]
+        let url = URL(string: iUS+book+tutorial+"p"+page+iUE)!
+        tutorialImage.kf.indicatorType = .activity
+        tutorialImage.kf.setImage(with: url)
+        
+        if counter == length{
+            nextButton.isEnabled=false}
+    }
+    
+    
+    
+    //duds
     @IBAction func SwipeRight(_ sender: AnyObject) {
         print("right")
     }
@@ -116,6 +151,24 @@ class TutorialViewController: UIViewController {
     
     @IBAction func goBack(_ sender: AnyObject) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    //correct
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.right:
+                previousPage()
+            case UISwipeGestureRecognizerDirection.down:
+                print("Swiped down")
+            case UISwipeGestureRecognizerDirection.left:
+                nextPage()
+            case UISwipeGestureRecognizerDirection.up:
+                print("Swiped up")
+            default:
+                break
+            }
+        }
     }
     
 }
