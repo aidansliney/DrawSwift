@@ -26,8 +26,20 @@ class FirstViewController: UIViewController {
     var book:[Book] = bookData
     
     
+    override func viewDidAppear(_ animated: Bool)
+
+    {
+        navigationController?.navigationBar.barTintColor = UIColor( red: 30/255, green: 30/255, blue:30/255, alpha: 0.2 )
+    }
+    
+    
+
+        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         // Prepare images for tapping
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))

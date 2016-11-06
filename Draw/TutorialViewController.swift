@@ -17,6 +17,7 @@ class TutorialViewController: UIViewController {
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var helpText: UILabel!
     
+    @IBOutlet var background: UIView!
     //variables passed by segues
     var passedBook: String?
     var passedT: String?
@@ -34,6 +35,17 @@ class TutorialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //set color for tutorial
+        
+        print (passedBook)
+        
+        if passedBook == "book00"
+        {
+        print ("This is the tutorial")
+            background.backgroundColor = UIColor( red: 52/255, green: 54/255, blue:50/255, alpha: 1.0 )        }
+        
+        
         previousButton.isEnabled = false
         //set the first image
         bookLong = passedBook!

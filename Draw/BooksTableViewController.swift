@@ -19,6 +19,13 @@ class BooksTableViewController: UITableViewController {
     var passedBanner = "banner"
     var passedH1 = "header"
     var passedBookNumber = 0
+    
+    override func viewDidAppear(_ animated: Bool)
+        
+    {
+        navigationController?.navigationBar.barTintColor = UIColor( red: 30/255, green: 30/255, blue:30/255, alpha: 0.2 )
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

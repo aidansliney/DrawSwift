@@ -50,17 +50,17 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         
         if book.level == 1
         {
-            navigationController?.navigationBar.barTintColor = UIColor( red: 255/255, green: 80/255, blue:80/255, alpha: 0.5 )
+            navigationController?.navigationBar.barTintColor = UIColor( red: 93/255, green: 142/255, blue:222/255, alpha: 0.2 )
         }
         
         if book.level == 2
         {
-            navigationController?.navigationBar.barTintColor = UIColor( red: 80/255, green: 255/255, blue:80/255, alpha: 0.5 )
+            navigationController?.navigationBar.barTintColor = UIColor( red: 98/255, green: 193/255, blue:181/255, alpha: 0.2 )
         }
         
         if book.level == 3
         {
-            navigationController?.navigationBar.barTintColor = UIColor( red: 80/255, green: 80/255, blue:255/255, alpha: 0.5 )
+            navigationController?.navigationBar.barTintColor = UIColor( red: 255/255, green: 80/255, blue:80/255, alpha: 0.2 )
         }
         
     }

@@ -19,6 +19,16 @@ class TutorialCollectionViewController: UICollectionViewController {
     var passedBook = "book 01"
     var passedT = ""
     var passedLength = 0
+    
+    
+ 
+    override func viewDidAppear(_ animated: Bool)
+        
+    {
+        navigationController?.navigationBar.barTintColor = UIColor( red: 30/255, green: 30/255, blue:30/255, alpha: 0.2 )
+    }
+    
+    
 
 
     override func viewDidLoad() {
@@ -27,6 +37,7 @@ class TutorialCollectionViewController: UICollectionViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
+ 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
