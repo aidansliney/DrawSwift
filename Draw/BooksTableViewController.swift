@@ -62,9 +62,6 @@ class BooksTableViewController: UITableViewController {
             levelLabel.text = book.level
         }
         
-        if let h1Label = cell.viewWithTag(102) as? UILabel {
-            h1Label.text = book.h1
-        }
         
         if let ratingImageView = cell.viewWithTag(103) as? UIImageView {
             ratingImageView.image = UIImage(named: book.cover!)

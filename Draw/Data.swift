@@ -3,15 +3,14 @@
 //Set up sample data
 
 let bookData = [
-    Book(bookname:"book00", level:"Tic-Tac-Toe",h1:"Learn howhero", rating: 4, cover: "b01isocover", banner: "b03banner", tutorial: book1Tutorials ),
-    Book(bookname:"book01", level:"Tic-Tac-Toe",h1:"Learn howhero", rating: 4, cover: "b01isocover", banner: "b03banner", tutorial: book1Tutorials ),
-    Book(bookname: "book02", level: "Spin the",h1:"Learn uperhero", rating: 5, cover: "b02isocover", banner: "b03banner", tutorial: book2Tutorials),
-    Book(bookname: "book03", level: "Texas Hold 'em Poker",h1:"Learn hosuperhero", rating: 2, cover: "b03isocover",banner: "b01banner", tutorial: book3Tutorials),
-    Book(bookname:"book04", level:"Tic-Tac-Toe",h1:"Learn how to draw erhero", rating: 4, cover: "b04isocover",banner: "b03banner", tutorial: book4Tutorials),
-    Book(bookname: "book05", level: "Spin the Bottle",h1:"Learn how  superhero", rating: 5, cover: "b05isocover",banner: "b03banner", tutorial: book5Tutorials),
-    Book(bookname: "book06", level: "Texas Hold 'em Poker",h1:"Learn howsuperhero", rating: 2, cover: "b06isocover",banner: "b01banner", tutorial: book6Tutorials),
-    Book(bookname:"book07", level:"Tic-Tac-Toe",h1:"Learn how to draw arhero", rating: 4, cover: "b07isocover",banner: "b03banner", tutorial: book7Tutorials),
-    Book(bookname:"book07", level:"Tic-Tac-Toe",h1:"Learn how to draw arhero", rating: 4, cover: "b07isocover",banner: "b03banner", tutorial: book7Tutorials)]
+    Book(bookname:"book 01", level:"Heroic Male Beginners ¾ View",  cover: "b01isocover", banner: "b03banner", tutorial: book1Tutorials ),
+    Book(bookname: "book 02", level: "Heroic Male Intermediate ¾ View",  cover: "b02isocover", banner: "b03banner", tutorial: book2Tutorials),
+    Book(bookname: "book 03", level: "Heroic Male Advanced ¾ View",  cover: "b03isocover",banner: "b01banner", tutorial: book3Tutorials),
+    Book(bookname:"book 04", level:"Arm Muscles",  cover: "b04isocover",banner: "b03banner", tutorial: book4Tutorials),
+    Book(bookname: "book 05", level: "Dynamic Kicking",  cover: "b05isocover",banner: "b03banner", tutorial: book5Tutorials),
+    Book(bookname: "book 06", level: "Heroic Male Beginners Front View",  cover: "b06isocover",banner: "b01banner", tutorial: book6Tutorials),
+    Book(bookname:"book 07", level:"Heroic Male Intermediate Front View",  cover: "b07isocover",banner: "b03banner", tutorial: book7Tutorials),
+    Book(bookname:"book 08", level:"Face Front View",  cover: "b07isocover",banner: "b03banner", tutorial: book7Tutorials)]
 
 
 let book0Tutorials = [

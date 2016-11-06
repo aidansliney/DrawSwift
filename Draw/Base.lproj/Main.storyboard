@@ -182,16 +182,16 @@ Or the Tutorials tab for individual lessons</string>
         <scene sceneID="nly-Ei-hbY">
             <objects>
                 <tableViewController id="g7w-4Y-Q0H" customClass="BooksTableViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="529" sectionHeaderHeight="28" sectionFooterHeight="28" id="b3b-QN-wdO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="487" sectionHeaderHeight="28" sectionFooterHeight="28" id="b3b-QN-wdO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="BookCell" rowHeight="529" id="ije-la-1Vu">
-                                <rect key="frame" x="0.0" y="92" width="375" height="529"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="BookCell" rowHeight="487" id="ije-la-1Vu">
+                                <rect key="frame" x="0.0" y="92" width="375" height="487"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ije-la-1Vu" id="08D-B7-Ynf">
-                                    <frame key="frameInset" width="375" height="528"/>
+                                    <frame key="frameInset" width="375" height="486"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sj7-ds-kez" userLabel="Card View">
@@ -201,56 +201,55 @@ Or the Tutorials tab for individual lessons</string>
                                                         <constraint firstAttribute="width" secondItem="LIL-27-RuS" secondAttribute="height" multiplier="25:28" id="yWV-09-0Xw"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="272" verticalHuggingPriority="251" horizontalCompressionResistancePriority="761" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae1-Cd-p1c">
-                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="28" id="Mic-dq-3EJ"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PX7-5g-ZJV">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="25" id="ELH-s6-KfH"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPk-ly-XHI">
                                                     <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="td3-zh-gKf"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZ5-Va-lJL">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQQ-aE-0PP">
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PX7-5g-ZJV">
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="ELH-s6-KfH"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="wvh-Y4-QAZ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="34" id="5tn-FL-0QT"/>
+                                                        <constraint firstItem="PX7-5g-ZJV" firstAttribute="leading" secondItem="mQQ-aE-0PP" secondAttribute="leading" constant="8" id="InO-Ab-M5L"/>
+                                                        <constraint firstItem="PX7-5g-ZJV" firstAttribute="top" secondItem="mQQ-aE-0PP" secondAttribute="bottom" constant="-30" id="KDw-lc-9CQ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="PX7-5g-ZJV" secondAttribute="bottom" constant="5" id="ltQ-2D-OWk"/>
+                                                        <constraint firstAttribute="width" constant="90" id="xrU-ZG-dDr"/>
+                                                        <constraint firstItem="PX7-5g-ZJV" firstAttribute="top" secondItem="mQQ-aE-0PP" secondAttribute="top" constant="5" id="zSC-HI-hHb"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZ5-Va-lJL">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
+                                                <constraint firstItem="mQQ-aE-0PP" firstAttribute="leading" secondItem="Sj7-ds-kez" secondAttribute="leading" id="1Lg-41-HIZ"/>
                                                 <constraint firstItem="CPk-ly-XHI" firstAttribute="leading" secondItem="Sj7-ds-kez" secondAttribute="leading" id="35K-ch-bir"/>
+                                                <constraint firstAttribute="trailing" secondItem="NZ5-Va-lJL" secondAttribute="trailing" constant="8" id="5CW-Th-zU4"/>
                                                 <constraint firstAttribute="trailing" secondItem="CPk-ly-XHI" secondAttribute="trailing" id="Fk5-60-Fre"/>
-                                                <constraint firstAttribute="trailing" secondItem="PX7-5g-ZJV" secondAttribute="trailing" constant="5" id="JFD-wr-BUS"/>
-                                                <constraint firstAttribute="bottom" secondItem="PX7-5g-ZJV" secondAttribute="bottom" constant="5" id="K4J-PD-h5C"/>
+                                                <constraint firstItem="NZ5-Va-lJL" firstAttribute="leading" secondItem="Sj7-ds-kez" secondAttribute="leading" constant="8" id="IQ3-lC-aQ5"/>
                                                 <constraint firstItem="LIL-27-RuS" firstAttribute="leading" secondItem="Sj7-ds-kez" secondAttribute="leading" id="Mfm-KY-B8q"/>
-                                                <constraint firstItem="LIL-27-RuS" firstAttribute="top" secondItem="Sj7-ds-kez" secondAttribute="top" id="U5f-l4-3AG"/>
+                                                <constraint firstItem="LIL-27-RuS" firstAttribute="top" secondItem="Sj7-ds-kez" secondAttribute="top" id="SmJ-gv-KGr"/>
+                                                <constraint firstAttribute="bottom" secondItem="mQQ-aE-0PP" secondAttribute="bottom" constant="53" id="VB5-np-99H"/>
+                                                <constraint firstItem="NZ5-Va-lJL" firstAttribute="top" secondItem="mQQ-aE-0PP" secondAttribute="bottom" constant="27" id="VcH-a2-N2t"/>
                                                 <constraint firstAttribute="bottom" secondItem="CPk-ly-XHI" secondAttribute="bottom" id="afc-aW-psP"/>
-                                                <constraint firstAttribute="height" secondItem="LIL-27-RuS" secondAttribute="height" constant="41" id="eJR-By-nct"/>
-                                                <constraint firstItem="PX7-5g-ZJV" firstAttribute="top" secondItem="ae1-Cd-p1c" secondAttribute="bottom" constant="70" id="h9e-Qp-2EG"/>
-                                                <constraint firstItem="ae1-Cd-p1c" firstAttribute="leading" secondItem="Sj7-ds-kez" secondAttribute="leading" id="l4Q-AC-5DI"/>
-                                                <constraint firstItem="PX7-5g-ZJV" firstAttribute="leading" secondItem="Sj7-ds-kez" secondAttribute="leading" constant="5" id="rzg-CW-UOS"/>
-                                                <constraint firstItem="NZ5-Va-lJL" firstAttribute="leading" secondItem="Sj7-ds-kez" secondAttribute="leading" id="sTD-Mg-raQ"/>
+                                                <constraint firstItem="CPk-ly-XHI" firstAttribute="top" secondItem="NZ5-Va-lJL" secondAttribute="bottom" constant="7" id="gsW-It-OOc"/>
+                                                <constraint firstItem="NZ5-Va-lJL" firstAttribute="top" secondItem="Sj7-ds-kez" secondAttribute="top" constant="428" id="nac-av-dMO"/>
                                                 <constraint firstItem="LIL-27-RuS" firstAttribute="width" secondItem="Sj7-ds-kez" secondAttribute="width" id="u7b-3e-DPF"/>
                                                 <constraint firstAttribute="trailing" secondItem="LIL-27-RuS" secondAttribute="trailing" id="uTz-AW-K9Q"/>
-                                                <constraint firstItem="ae1-Cd-p1c" firstAttribute="top" secondItem="NZ5-Va-lJL" secondAttribute="bottom" constant="18" id="ufL-gL-y3V"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -270,14 +269,14 @@ Or the Tutorials tab for individual lessons</string>
                     </tableView>
                     <navigationItem key="navigationItem" title="  Books" id="Ukw-z1-tlK"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="600"/>
+                    <size key="freeformSize" width="375" height="700"/>
                     <connections>
                         <segue destination="htC-3D-f4m" kind="show" identifier="toBookDetailSeg" id="JTw-tT-f88"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NOl-hI-zZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-58" y="891"/>
+            <point key="canvasLocation" x="-58.399999999999999" y="890.55472263868069"/>
         </scene>
         <!--Book Detail-->
         <scene sceneID="IxG-bR-VUc">
@@ -557,7 +556,7 @@ Or the Tutorials tab for individual lessons</string>
         <scene sceneID="8Aj-yN-rgO">
             <objects>
                 <navigationController title="Books" automaticallyAdjustsScrollViewInsets="NO" id="AYs-Jz-vrj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Books" id="FfD-U3-CXs"/>
+                    <tabBarItem key="tabBarItem" title="Books" image="lit" id="FfD-U3-CXs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" id="tr0-fS-5Pj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -666,7 +665,7 @@ Or the Tutorials tab for individual lessons</string>
         <scene sceneID="Cc9-dF-u2j">
             <objects>
                 <navigationController title="Tutorials" automaticallyAdjustsScrollViewInsets="NO" id="5Pl-4s-iBz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tutorials" image="first" id="bQt-lH-p3N"/>
+                    <tabBarItem key="tabBarItem" title="Tutorials" image="list" id="bQt-lH-p3N"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mh2-la-ehB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -682,11 +681,13 @@ Or the Tutorials tab for individual lessons</string>
             </objects>
             <point key="canvasLocation" x="860" y="152"/>
         </scene>
-        <!--New-->
+        <!--Home-->
         <scene sceneID="i9Q-1u-hgK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S1M-io-oSC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="New" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="acW-dT-cKf">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="900"/>
@@ -711,13 +712,15 @@ Or the Tutorials tab for individual lessons</string>
         <image name="b02isocover" width="600" height="688"/>
         <image name="b06banner" width="600" height="188"/>
         <image name="b06isocover" width="600" height="688"/>
-        <image name="first" width="30" height="30"/>
+        <image name="home" width="25" height="25"/>
+        <image name="list" width="25" height="25"/>
+        <image name="lit" width="25" height="25"/>
         <image name="ma3_4torso13" width="413" height="733"/>
         <image name="sliney" width="500" height="281"/>
         <image name="videothumb" width="852" height="479"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XHX-kh-FMQ"/>
+        <segue reference="JTw-tT-f88"/>
         <segue reference="Tcd-dn-iIH"/>
     </inferredMetricsTieBreakers>
 </document>

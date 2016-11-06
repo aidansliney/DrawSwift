@@ -23,6 +23,7 @@
 		960F50681DAC12EB0091AD2C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50671DAC12EB0091AD2C /* TutorialViewController.swift */; };
 		968D65781DB9471F002BF11A /* Kingfisher.framework in Sources */ = {isa = PBXBuildFile; fileRef = 96F90E191DB945B600F807BD /* Kingfisher.framework */; };
 		969784B81DB3708000C791B2 /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969784B71DB3708000C791B2 /* myCollectionViewCell.swift */; };
+		96F51A701DCF2BB300C41C4C /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96F51A6F1DCF2BB300C41C4C /* video.mp4 */; };
 		96F90E1A1DB945B600F807BD /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F90E191DB945B600F807BD /* Kingfisher.framework */; };
 		96F90E1B1DB945BD00F807BD /* Kingfisher.framework in Resources */ = {isa = PBXBuildFile; fileRef = 96F90E191DB945B600F807BD /* Kingfisher.framework */; };
 		96F90E1C1DB945CF00F807BD /* Kingfisher.framework in Sources */ = {isa = PBXBuildFile; fileRef = 96F90E191DB945B600F807BD /* Kingfisher.framework */; };
@@ -69,6 +70,7 @@
 		960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewController.swift; sourceTree = "<group>"; };
 		960F50671DAC12EB0091AD2C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		969784B71DB3708000C791B2 /* myCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCollectionViewCell.swift; sourceTree = "<group>"; };
+		96F51A6F1DCF2BB300C41C4C /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video.mp4; path = Draw/Assets.xcassets/video.dataset/video.mp4; sourceTree = "<group>"; };
 		96F90E191DB945B600F807BD /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../Library/Developer/Xcode/DerivedData/Draw-cxwevpzycufathdntdrxowxzcrrh/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
 		B85A281AE36E22EB51E58A69 /* Pods-Draw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Draw.release.xcconfig"; path = "Pods/Target Support Files/Pods-Draw/Pods-Draw.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 		960F501B1DA900EA0091AD2C = {
 			isa = PBXGroup;
 			children = (
+				96F51A6F1DCF2BB300C41C4C /* video.mp4 */,
 				960F50261DA900EA0091AD2C /* Draw */,
 				960F503D1DA900EB0091AD2C /* DrawTests */,
 				960F50481DA900EB0091AD2C /* DrawUITests */,
@@ -290,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F51A701DCF2BB300C41C4C /* video.mp4 in Resources */,
 				960F50341DA900EA0091AD2C /* LaunchScreen.storyboard in Resources */,
 				960F50311DA900EA0091AD2C /* Assets.xcassets in Resources */,
 				960F502F1DA900EA0091AD2C /* Main.storyboard in Resources */,

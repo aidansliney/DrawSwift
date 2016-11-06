@@ -62,8 +62,11 @@ class FirstViewController: UIViewController {
     
     func handleTapVideo(sender: UITapGestureRecognizer) {
         print("tapVideo")
-        let videoURL = NSURL(string: "https://r3---sn-jvhixh-5goz.googlevideo.com/videoplayback?mm=31&mn=sn-jvhixh-5goz&key=yt6&signature=60E9FBB08C1A51D88757B1420089D0043FC5DFEF.19422504CFE0E70E786412F12E123387A9BFB41A&mt=1478347306&mv=m&pl=19&ei=NssdWNO6CZLSda7go9gD&ms=au&itag=22&lmt=1477320299856116&requiressl=yes&ip=83.251.115.23&source=youtube&dur=59.118&id=o-ALxZtyElLuIu018FUsdA33GhmU6V0ar8ctGSFy35my98&sparams=dur,ei,id,initcwndbps,ip,ipbits,itag,lmt,mime,mm,mn,ms,mv,pl,ratebypass,requiressl,source,upn,expire&upn=7eDw0OIsfBI&expire=1478369174&mime=video/mp4&initcwndbps=3616250&ipbits=0&ratebypass=yes")
-        let player = AVPlayer(url: videoURL! as URL)
+
+        
+         let path = Bundle.main.path(forResource: "video", ofType:"mp4")
+        
+        let player = AVPlayer(url: NSURL(fileURLWithPath: path!) as URL)
         let playerViewController = AVPlayerViewController()
         playerViewController.player = player
         self.present(playerViewController, animated: true) {
@@ -79,7 +82,7 @@ class FirstViewController: UIViewController {
             destinationVC.passedImagename = bookData[1].cover
             destinationVC.passedLevel = bookData[1].level
             destinationVC.passedBookname = bookData[1].bookname
-            destinationVC.passedH1 = bookData[1].h1
+           
             destinationVC.passedBanner = bookData[1].banner
             destinationVC.passedTutorial = bookData[1].tutorial
         }
