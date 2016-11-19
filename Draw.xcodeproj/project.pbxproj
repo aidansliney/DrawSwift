@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12F6C14B88BD97D309F3515F /* Pods_Draw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123345C61A68CF99CA3FFA62 /* Pods_Draw.framework */; };
 		960F50281DA900EA0091AD2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50271DA900EA0091AD2C /* AppDelegate.swift */; };
 		960F502A1DA900EA0091AD2C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50291DA900EA0091AD2C /* FirstViewController.swift */; };
 		960F502C1DA900EA0091AD2C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F502B1DA900EA0091AD2C /* SecondViewController.swift */; };
@@ -23,6 +24,10 @@
 		960F50681DAC12EB0091AD2C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50671DAC12EB0091AD2C /* TutorialViewController.swift */; };
 		968D65781DB9471F002BF11A /* Kingfisher.framework in Sources */ = {isa = PBXBuildFile; fileRef = 96F90E191DB945B600F807BD /* Kingfisher.framework */; };
 		969784B81DB3708000C791B2 /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969784B71DB3708000C791B2 /* myCollectionViewCell.swift */; };
+		96DA7A121DE07A5500003BD7 /* FourthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA7A111DE07A5500003BD7 /* FourthTableViewController.swift */; };
+		96DA7A141DE07D9500003BD7 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA7A131DE07D9500003BD7 /* ProductCell.swift */; };
+		96DA7A161DE07DC200003BD7 /* RageProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA7A151DE07DC200003BD7 /* RageProducts.swift */; };
+		96DA7A181DE07E3D00003BD7 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA7A171DE07E3D00003BD7 /* IAPHelper.swift */; };
 		96F51A701DCF2BB300C41C4C /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96F51A6F1DCF2BB300C41C4C /* video.mp4 */; };
 		96F90E1A1DB945B600F807BD /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F90E191DB945B600F807BD /* Kingfisher.framework */; };
 		96F90E1B1DB945BD00F807BD /* Kingfisher.framework in Resources */ = {isa = PBXBuildFile; fileRef = 96F90E191DB945B600F807BD /* Kingfisher.framework */; };
@@ -48,7 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		249FDB0D9D92511BFF7F97AE /* Pods-Draw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Draw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Draw/Pods-Draw.debug.xcconfig"; sourceTree = "<group>"; };
+		123345C61A68CF99CA3FFA62 /* Pods_Draw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Draw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		492E363100B20104D4557170 /* Pods-Draw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Draw.release.xcconfig"; path = "Pods/Target Support Files/Pods-Draw/Pods-Draw.release.xcconfig"; sourceTree = "<group>"; };
 		960F50241DA900EA0091AD2C /* Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		960F50271DA900EA0091AD2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		960F50291DA900EA0091AD2C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -70,9 +76,13 @@
 		960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewController.swift; sourceTree = "<group>"; };
 		960F50671DAC12EB0091AD2C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		969784B71DB3708000C791B2 /* myCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCollectionViewCell.swift; sourceTree = "<group>"; };
+		96DA7A111DE07A5500003BD7 /* FourthTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthTableViewController.swift; sourceTree = "<group>"; };
+		96DA7A131DE07D9500003BD7 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		96DA7A151DE07DC200003BD7 /* RageProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RageProducts.swift; sourceTree = "<group>"; };
+		96DA7A171DE07E3D00003BD7 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		96F51A6F1DCF2BB300C41C4C /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video.mp4; path = Draw/Assets.xcassets/video.dataset/video.mp4; sourceTree = "<group>"; };
 		96F90E191DB945B600F807BD /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../Library/Developer/Xcode/DerivedData/Draw-cxwevpzycufathdntdrxowxzcrrh/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
-		B85A281AE36E22EB51E58A69 /* Pods-Draw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Draw.release.xcconfig"; path = "Pods/Target Support Files/Pods-Draw/Pods-Draw.release.xcconfig"; sourceTree = "<group>"; };
+		AEE648FDEA8E7DB4C933AE19 /* Pods-Draw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Draw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Draw/Pods-Draw.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F6C14B88BD97D309F3515F /* Pods_Draw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +115,8 @@
 		5118EFB09C72BC5E80C43E32 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				249FDB0D9D92511BFF7F97AE /* Pods-Draw.debug.xcconfig */,
-				B85A281AE36E22EB51E58A69 /* Pods-Draw.release.xcconfig */,
+				AEE648FDEA8E7DB4C933AE19 /* Pods-Draw.debug.xcconfig */,
+				492E363100B20104D4557170 /* Pods-Draw.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -136,7 +147,11 @@
 		960F50261DA900EA0091AD2C /* Draw */ = {
 			isa = PBXGroup;
 			children = (
+				96DA7A171DE07E3D00003BD7 /* IAPHelper.swift */,
 				960F502D1DA900EA0091AD2C /* Main.storyboard */,
+				96DA7A111DE07A5500003BD7 /* FourthTableViewController.swift */,
+				96DA7A131DE07D9500003BD7 /* ProductCell.swift */,
+				96DA7A151DE07DC200003BD7 /* RageProducts.swift */,
 				960F50271DA900EA0091AD2C /* AppDelegate.swift */,
 				960F50291DA900EA0091AD2C /* FirstViewController.swift */,
 				960F502B1DA900EA0091AD2C /* SecondViewController.swift */,
@@ -176,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				96F90E191DB945B600F807BD /* Kingfisher.framework */,
+				123345C61A68CF99CA3FFA62 /* Pods_Draw.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -372,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96DA7A161DE07DC200003BD7 /* RageProducts.swift in Sources */,
 				960F50661DAAA2670091AD2C /* TutorialCollectionViewController.swift in Sources */,
 				960F50681DAC12EB0091AD2C /* TutorialViewController.swift in Sources */,
 				960F502C1DA900EA0091AD2C /* SecondViewController.swift in Sources */,
@@ -381,6 +398,9 @@
 				969784B81DB3708000C791B2 /* myCollectionViewCell.swift in Sources */,
 				960F50641DAA9F860091AD2C /* BookDetailController.swift in Sources */,
 				960F505E1DAA56FE0091AD2C /* Book.swift in Sources */,
+				96DA7A141DE07D9500003BD7 /* ProductCell.swift in Sources */,
+				96DA7A121DE07A5500003BD7 /* FourthTableViewController.swift in Sources */,
+				96DA7A181DE07E3D00003BD7 /* IAPHelper.swift in Sources */,
 				960F502A1DA900EA0091AD2C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,7 +555,7 @@
 		};
 		960F504F1DA900EB0091AD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 249FDB0D9D92511BFF7F97AE /* Pods-Draw.debug.xcconfig */;
+			baseConfigurationReference = AEE648FDEA8E7DB4C933AE19 /* Pods-Draw.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7JTEBJ5C66;
@@ -547,7 +567,7 @@
 				INFOPLIST_FILE = Draw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "learn-how-to-draw.Draw";
+				PRODUCT_BUNDLE_IDENTIFIER = draw.draw.draw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -555,7 +575,7 @@
 		};
 		960F50501DA900EB0091AD2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B85A281AE36E22EB51E58A69 /* Pods-Draw.release.xcconfig */;
+			baseConfigurationReference = 492E363100B20104D4557170 /* Pods-Draw.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7JTEBJ5C66;
@@ -567,7 +587,7 @@
 				INFOPLIST_FILE = Draw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "learn-how-to-draw.Draw";
+				PRODUCT_BUNDLE_IDENTIFIER = draw.draw.draw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -575,7 +595,6 @@
 		};
 		960F50521DA900EB0091AD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 249FDB0D9D92511BFF7F97AE /* Pods-Draw.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -590,7 +609,6 @@
 		};
 		960F50531DA900EB0091AD2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B85A281AE36E22EB51E58A69 /* Pods-Draw.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -605,7 +623,6 @@
 		};
 		960F50551DA900EB0091AD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 249FDB0D9D92511BFF7F97AE /* Pods-Draw.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DrawUITests/Info.plist;
@@ -619,7 +636,6 @@
 		};
 		960F50561DA900EB0091AD2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B85A281AE36E22EB51E58A69 /* Pods-Draw.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DrawUITests/Info.plist;
