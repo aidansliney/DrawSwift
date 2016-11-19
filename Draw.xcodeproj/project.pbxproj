@@ -251,6 +251,7 @@
 				TargetAttributes = {
 					960F50231DA900EA0091AD2C = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7JTEBJ5C66;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -537,12 +538,14 @@
 			baseConfigurationReference = 249FDB0D9D92511BFF7F97AE /* Pods-Draw.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JTEBJ5C66;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Kingfisher",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Draw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "learn-how-to-draw.Draw";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -555,12 +558,14 @@
 			baseConfigurationReference = B85A281AE36E22EB51E58A69 /* Pods-Draw.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JTEBJ5C66;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Kingfisher",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Draw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "learn-how-to-draw.Draw";
 				PRODUCT_NAME = "$(TARGET_NAME)";

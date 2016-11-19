@@ -16,11 +16,8 @@ class TutorialViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var helpText: UILabel!
-    
-    
-    
+
     //swipe
-    
     @IBOutlet var background: UIView!
     //variables passed by segues
     var passedBook: String?
@@ -56,11 +53,7 @@ class TutorialViewController: UIViewController {
         self.view.addGestureRecognizer(swipeDown)
         
         
-        
         //set color for tutorial
-        
-        print (passedBook)
-        
         if passedBook == "book00"
         {
         print ("This is the tutorial")
