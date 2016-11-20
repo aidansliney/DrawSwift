@@ -40,6 +40,7 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         passedBanner = book.banner!
         passedH1 = book.cover!
         passedTutorial = book.tutorial!
+       
         
         
         //set title and image

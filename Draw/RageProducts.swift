@@ -24,9 +24,18 @@ import Foundation
 
 public struct RageProducts {
     
+    public static let Book01 = "Book001" //used book01 in tutorial
     public static let Book02 = "Book02"
-    
-    fileprivate static let productIdentifiers: Set<ProductIdentifier> = [RageProducts.Book02]
+    public static let Book03 = "Book03"
+    public static let Book04 = "Book04"
+    public static let Book05 = "Book05"
+    public static let Book06 = "Book06"
+    public static let Book07 = "Book07"
+    public static let Book08 = "Book08"
+    public static let Book09 = "Book09"
+    public static let Book10 = "Book10"
+    public static let Book11 = "Book11"
+    fileprivate static let productIdentifiers: Set<ProductIdentifier> = [RageProducts.Book01,RageProducts.Book02,RageProducts.Book03,RageProducts.Book04,RageProducts.Book05,RageProducts.Book06,RageProducts.Book07,RageProducts.Book08,RageProducts.Book09,RageProducts.Book10,RageProducts.Book11]
     
     public static let store = IAPHelper(productIds: RageProducts.productIdentifiers)
 }

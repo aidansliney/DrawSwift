@@ -29,19 +29,6 @@ class FourthTableViewController: UITableViewController {
         return true
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == showDetailSegueIdentifier {
-//            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            
-//            let product = products[(indexPath as NSIndexPath).row]
-////            
-////            if let name = resourceNameForProductIdentifier(product.productIdentifier),
-////                let detailViewController = segue.destination as? DetailViewController {
-////                let image = UIImage(named: name)
-////                detailViewController.image = image
-////            }
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,7 +66,6 @@ class FourthTableViewController: UITableViewController {
                 
                 self.tableView.reloadData()
             }
-            
             self.refreshControl?.endRefreshing()
         }
     }
