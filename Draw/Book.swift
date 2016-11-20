@@ -36,14 +36,16 @@ struct Tutorial {
     var t: String?
     var level: String?
     var length: Int?
+    var key: String?
 
-    init(book: String?,t: String?,image: String?,text: String?,level: String?,length: Int ) {
+    init(key: String?, book: String?,t: String?,image: String?,text: String?,level: String?,length: Int ) {
         self.book = book
         self.t = t
         self.image = image
         self.text = text
         self.level = level
         self.length = length
+        self.key = key
     }
 }
 

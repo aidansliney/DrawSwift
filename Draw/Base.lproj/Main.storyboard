@@ -247,7 +247,7 @@ Or the Tutorials tab for individual lessons</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="530"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ije-la-1Vu" id="08D-B7-Ynf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="529.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="529"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sj7-ds-kez" userLabel="Card View">
@@ -762,7 +762,7 @@ Or the Tutorials tab for individual lessons</string>
         <scene sceneID="FJo-HX-TCX">
             <objects>
                 <collectionViewController title="Tutorials" id="Uv4-K9-Rgr" customClass="TutorialCollectionViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" id="b9S-bL-FPb">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" dataMode="prototypes" id="b9S-bL-FPb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.9219981206513439" green="0.9219981206513439" blue="0.9219981206513439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -793,7 +793,7 @@ Or the Tutorials tab for individual lessons</string>
                                             <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Level 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ut-db-7Q4">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="9" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Level 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ut-db-7Q4">
                                             <rect key="frame" x="0.0" y="201" width="52" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.74783919919999997" green="0.78268010239999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -818,14 +818,25 @@ Or the Tutorials tab for individual lessons</string>
                                                 <constraint firstAttribute="height" constant="1" id="f0g-la-K1b"/>
                                             </constraints>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locked" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyp-9M-jH0">
+                                            <rect key="frame" x="126" y="206.5" width="41" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Pyp-9M-jH0" secondAttribute="height" multiplier="2:1" id="GdE-Yh-se6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="Pyp-9M-jH0" firstAttribute="trailing" secondItem="jGt-vR-vqC" secondAttribute="trailingMargin" id="4zq-eB-BeE"/>
                                     <constraint firstItem="urW-Xt-q8x" firstAttribute="leading" secondItem="jGt-vR-vqC" secondAttribute="leadingMargin" constant="4" id="8ad-Jy-9si"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="urW-Xt-q8x" secondAttribute="trailing" constant="4" id="Dxv-jY-7tx"/>
                                     <constraint firstAttribute="trailing" secondItem="bCg-IU-LcZ" secondAttribute="trailing" id="LKf-Td-G1i"/>
                                     <constraint firstItem="bCg-IU-LcZ" firstAttribute="leading" secondItem="jGt-vR-vqC" secondAttribute="leading" id="NEQ-hY-rlE"/>
+                                    <constraint firstItem="bCg-IU-LcZ" firstAttribute="top" secondItem="Pyp-9M-jH0" secondAttribute="bottom" constant="6" id="dbb-Ob-HKc"/>
                                     <constraint firstItem="urW-Xt-q8x" firstAttribute="top" secondItem="bCg-IU-LcZ" secondAttribute="bottom" constant="2" id="g3h-Xz-Guk"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="urW-Xt-q8x" secondAttribute="bottom" constant="2" id="qYv-lJ-Rl8"/>
                                 </constraints>
@@ -844,7 +855,7 @@ Or the Tutorials tab for individual lessons</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7z7-Iz-AYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1505" y="1230"/>
+            <point key="canvasLocation" x="1504.8" y="1229.2353823088456"/>
         </scene>
         <!--Tutorials-->
         <scene sceneID="Cc9-dF-u2j">
@@ -879,7 +890,7 @@ Or the Tutorials tab for individual lessons</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kjT-uK-tqC" id="Boo-1U-aza">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmX-Xd-bIt">

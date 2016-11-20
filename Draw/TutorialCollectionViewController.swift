@@ -21,6 +21,7 @@ class TutorialCollectionViewController: UICollectionViewController {
     var passedLength = 0
     
     
+    
  
     override func viewDidAppear(_ animated: Bool)
         
@@ -29,8 +30,6 @@ class TutorialCollectionViewController: UICollectionViewController {
     }
     
     
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,6 +46,8 @@ class TutorialCollectionViewController: UICollectionViewController {
         let image = UIImage(named: "baricon")
         imageView.image = image
         navigationItem.titleView = imageView
+        
+     //   lockedLabel.text = passedBook
     }
 
     override func didReceiveMemoryWarning() {
@@ -80,9 +81,19 @@ class TutorialCollectionViewController: UICollectionViewController {
             let color = UIColor(red: 0.5, green: 1,blue: 1,alpha: 1)
             levelLabel.backgroundColor = color
             levelLabel.text = tutorial.level
-            
+           
+            //set the locked tag
+            if let lockedLabel = cell.viewWithTag(14) as? UILabel { //3
+                
+                if( RageProducts.store.isProductPurchased(tutorial.key!)){
+                     lockedLabel.text = "open"
+                }
+                else
+                {
+                lockedLabel.text = "Locked"
+                }
+            }
         }
-        
         if let nameLabelTutorial = cell.viewWithTag(10) as? UILabel { //3
             nameLabelTutorial.text = tutorial.text
         }
@@ -113,7 +124,13 @@ class TutorialCollectionViewController: UICollectionViewController {
         passedBook = tutorial.book!
         passedT = tutorial.t!
         passedLength = tutorial.length!
+        
+        if( RageProducts.store.isProductPurchased(tutorial.key!)){
+        
         performSegue(withIdentifier: "toTutorialDetailSeg", sender: passedT)
+            
+        }
+    
     }
     
 
