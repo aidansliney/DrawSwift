@@ -9,17 +9,42 @@
 import UIKit
 
 class PopUpViewController: UIViewController {
+    
+    var parentBanner: String!
+    var parentBookName: String!
 
+    @IBOutlet weak var topImage: UIImageView!
+    @IBOutlet weak var bookName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showAnimate()
+        
+        //if parent is bookpage
+        if let parentVC = self.parent as? BookDetailController {
+            //set banner image
+            parentBanner = parentVC.passedBanner
+            topImage.image = UIImage(named: parentBanner)
+            //set book name
+            parentBookName = parentVC.passedBook
+            bookName.text = parentBookName
+            
+           if( RageProducts.store.isProductPurchased("Book02"))
+           {print("Purchased")}
+           else{
+            
+            print("notPurchased")
+            
+            }
 
-        // Do any additional setup after loading the view.
+        }
+        
+
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

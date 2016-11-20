@@ -22,9 +22,7 @@ class FourthTableViewController: UITableViewController {
             guard let indexPath = tableView.indexPathForSelectedRow else {
                 return false
             }
-            
             let product = products[(indexPath as NSIndexPath).row]
-            
             return RageProducts.store.isProductPurchased(product.productIdentifier)
         }
         
