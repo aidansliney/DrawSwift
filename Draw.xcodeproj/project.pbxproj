@@ -22,6 +22,7 @@
 		960F50641DAA9F860091AD2C /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50631DAA9F860091AD2C /* BookDetailController.swift */; };
 		960F50661DAAA2670091AD2C /* TutorialCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */; };
 		960F50681DAC12EB0091AD2C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F50671DAC12EB0091AD2C /* TutorialViewController.swift */; };
+		9681B5AD1DE19DD600A554A8 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681B5AC1DE19DD600A554A8 /* PopUpViewController.swift */; };
 		968D65781DB9471F002BF11A /* Kingfisher.framework in Sources */ = {isa = PBXBuildFile; fileRef = 96F90E191DB945B600F807BD /* Kingfisher.framework */; };
 		969784B81DB3708000C791B2 /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969784B71DB3708000C791B2 /* myCollectionViewCell.swift */; };
 		96DA7A121DE07A5500003BD7 /* FourthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA7A111DE07A5500003BD7 /* FourthTableViewController.swift */; };
@@ -75,6 +76,7 @@
 		960F50631DAA9F860091AD2C /* BookDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
 		960F50651DAAA2670091AD2C /* TutorialCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewController.swift; sourceTree = "<group>"; };
 		960F50671DAC12EB0091AD2C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		9681B5AC1DE19DD600A554A8 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		969784B71DB3708000C791B2 /* myCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCollectionViewCell.swift; sourceTree = "<group>"; };
 		96DA7A111DE07A5500003BD7 /* FourthTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthTableViewController.swift; sourceTree = "<group>"; };
 		96DA7A131DE07D9500003BD7 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				96DA7A171DE07E3D00003BD7 /* IAPHelper.swift */,
 				960F502D1DA900EA0091AD2C /* Main.storyboard */,
+				9681B5AC1DE19DD600A554A8 /* PopUpViewController.swift */,
 				96DA7A111DE07A5500003BD7 /* FourthTableViewController.swift */,
 				96DA7A131DE07D9500003BD7 /* ProductCell.swift */,
 				96DA7A151DE07DC200003BD7 /* RageProducts.swift */,
@@ -262,7 +265,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Aidan Sliney";
 				TargetAttributes = {
 					960F50231DA900EA0091AD2C = {
@@ -398,6 +401,7 @@
 				969784B81DB3708000C791B2 /* myCollectionViewCell.swift in Sources */,
 				960F50641DAA9F860091AD2C /* BookDetailController.swift in Sources */,
 				960F505E1DAA56FE0091AD2C /* Book.swift in Sources */,
+				9681B5AD1DE19DD600A554A8 /* PopUpViewController.swift in Sources */,
 				96DA7A141DE07D9500003BD7 /* ProductCell.swift in Sources */,
 				96DA7A121DE07A5500003BD7 /* FourthTableViewController.swift in Sources */,
 				96DA7A181DE07E3D00003BD7 /* IAPHelper.swift in Sources */,
@@ -557,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEE648FDEA8E7DB4C933AE19 /* Pods-Draw.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7JTEBJ5C66;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -577,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 492E363100B20104D4557170 /* Pods-Draw.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7JTEBJ5C66;
 				FRAMEWORK_SEARCH_PATHS = (

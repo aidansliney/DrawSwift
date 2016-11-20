@@ -120,6 +120,14 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         performSegue(withIdentifier: "toTutorialDetailFromBookSeg", sender: passedT)
     }
     
+    @IBAction func showPopup(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    
+    }
     @IBAction func goBack(_ sender: AnyObject) {
         self.navigationController?.popViewController(animated: true)
     }

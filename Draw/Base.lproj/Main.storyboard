@@ -247,7 +247,7 @@ Or the Tutorials tab for individual lessons</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="530"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ije-la-1Vu" id="08D-B7-Ynf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="529"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="529.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sj7-ds-kez" userLabel="Card View">
@@ -430,19 +430,31 @@ Or the Tutorials tab for individual lessons</string>
                                     <constraint firstAttribute="height" constant="5" id="Zfz-Sf-daN"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijZ-og-MTV">
+                                <rect key="frame" x="164" y="20" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showPopup:" destination="htC-3D-f4m" eventType="touchUpInside" id="vkD-dc-b09"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ijZ-og-MTV" firstAttribute="leading" secondItem="kgY-MQ-754" secondAttribute="leadingMargin" constant="148" id="4l2-8R-Pq1"/>
                             <constraint firstItem="coF-3T-88H" firstAttribute="leading" secondItem="kgY-MQ-754" secondAttribute="leadingMargin" id="5Jz-DI-W2Z"/>
                             <constraint firstItem="7aN-2k-zDo" firstAttribute="top" secondItem="coF-3T-88H" secondAttribute="bottom" id="8Rq-XO-22I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ijZ-og-MTV" secondAttribute="trailing" constant="149" id="CnK-ob-6oN"/>
                             <constraint firstItem="coF-3T-88H" firstAttribute="trailing" secondItem="kgY-MQ-754" secondAttribute="trailingMargin" id="DYs-uJ-YcC"/>
                             <constraint firstAttribute="trailing" secondItem="pR7-fI-yuy" secondAttribute="trailing" id="E0p-Nk-5fA"/>
                             <constraint firstItem="eGf-lM-7Z0" firstAttribute="leading" secondItem="kgY-MQ-754" secondAttribute="leading" id="H1L-mf-hmY"/>
                             <constraint firstAttribute="trailing" secondItem="eGf-lM-7Z0" secondAttribute="trailing" id="HQs-34-Wwf"/>
                             <constraint firstItem="coF-3T-88H" firstAttribute="top" secondItem="pR7-fI-yuy" secondAttribute="bottom" constant="-55" id="dLe-JK-qxi"/>
+                            <constraint firstItem="ijZ-og-MTV" firstAttribute="top" secondItem="RlR-tl-0aj" secondAttribute="bottom" constant="20" id="dUT-M3-BrL"/>
                             <constraint firstItem="pR7-fI-yuy" firstAttribute="top" secondItem="eGf-lM-7Z0" secondAttribute="bottom" id="hY1-th-m8d"/>
                             <constraint firstItem="pR7-fI-yuy" firstAttribute="leading" secondItem="kgY-MQ-754" secondAttribute="leading" id="iub-Zi-4Yo"/>
                             <constraint firstItem="eGf-lM-7Z0" firstAttribute="top" secondItem="RlR-tl-0aj" secondAttribute="bottom" id="l6Z-Uv-56p"/>
+                            <constraint firstItem="coF-3T-88H" firstAttribute="top" secondItem="ijZ-og-MTV" secondAttribute="bottom" constant="17" id="xWQ-6u-Kxi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Book Detail" id="K3z-Bg-pD2">
@@ -465,6 +477,83 @@ Or the Tutorials tab for individual lessons</string>
             </objects>
             <point key="canvasLocation" x="-58" y="1673"/>
         </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="I3z-Li-Qq6">
+            <objects>
+                <viewController storyboardIdentifier="sbPopUpID" id="cxl-ua-930" customClass="PopUpViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KSe-hm-zUr"/>
+                        <viewControllerLayoutGuide type="bottom" id="eeL-2R-pDg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b7b-1d-bUc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeE-cu-6Kc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TA7-u8-6de">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1C6-w5-Au5">
+                                            <rect key="frame" x="-64" y="0.0" width="439" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="euz-gl-Wca">
+                                                <rect key="frame" x="0.0" y="0.0" width="439" height="667"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6od-3n-dQp">
+                                <rect key="frame" x="52" y="99" width="270" height="469"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4au-7S-Wzi">
+                                        <rect key="frame" x="78" y="431" width="114" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="0d3-SO-wDI"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Sla-E8-SsA"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="114" id="ZqX-0a-B3Y"/>
+                                            <constraint firstAttribute="width" constant="114" id="aZ2-2O-stw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closePopup:" destination="cxl-ua-930" eventType="touchUpInside" id="FRR-yO-22t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="9jv-kt-wW6"/>
+                                    <constraint firstItem="4au-7S-Wzi" firstAttribute="centerX" secondItem="6od-3n-dQp" secondAttribute="centerX" id="PhN-ei-q6s"/>
+                                    <constraint firstAttribute="height" constant="469" id="iIx-ZE-DiT"/>
+                                    <constraint firstAttribute="bottom" secondItem="4au-7S-Wzi" secondAttribute="bottom" constant="8" id="rJW-b4-mui"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6od-3n-dQp" firstAttribute="centerY" secondItem="b7b-1d-bUc" secondAttribute="centerY" id="84T-ZO-ZCe"/>
+                            <constraint firstItem="6od-3n-dQp" firstAttribute="centerX" secondItem="b7b-1d-bUc" secondAttribute="centerX" id="LJk-ry-Ndc"/>
+                            <constraint firstItem="NeE-cu-6Kc" firstAttribute="top" secondItem="b7b-1d-bUc" secondAttribute="top" id="S2H-Jo-zuD"/>
+                            <constraint firstItem="NeE-cu-6Kc" firstAttribute="leading" secondItem="b7b-1d-bUc" secondAttribute="leading" id="gEq-u1-oIt"/>
+                            <constraint firstItem="eeL-2R-pDg" firstAttribute="top" secondItem="NeE-cu-6Kc" secondAttribute="bottom" id="r1I-aE-970"/>
+                            <constraint firstAttribute="trailing" secondItem="NeE-cu-6Kc" secondAttribute="trailing" id="vDP-CX-cud"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGq-pM-YKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="1307.4962518740631"/>
+        </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="an4-qI-mnz">
             <objects>
@@ -474,11 +563,11 @@ Or the Tutorials tab for individual lessons</string>
                         <viewControllerLayoutGuide type="bottom" id="EAu-Xb-bTQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GOV-W1-him">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b01t01p01" translatesAutoresizingMaskIntoConstraints="NO" id="HCE-Jg-4JW">
-                                <rect key="frame" x="25" y="64" width="325" height="522.5"/>
+                                <rect key="frame" x="25" y="0.0" width="325" height="522.5"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HCE-Jg-4JW" secondAttribute="height" multiplier="125:201" id="TPE-ap-3LM"/>
@@ -502,7 +591,7 @@ Or the Tutorials tab for individual lessons</string>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXV-wq-jhY">
-                                <rect key="frame" x="16" y="511" width="59" height="30"/>
+                                <rect key="frame" x="16" y="447" width="59" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oXV-wq-jhY" secondAttribute="height" multiplier="59:30" id="jAu-R6-d8J"/>
                                     <constraint firstAttribute="width" secondItem="oXV-wq-jhY" secondAttribute="height" multiplier="59:30" id="vcf-Ax-R9X"/>
@@ -513,7 +602,7 @@ Or the Tutorials tab for individual lessons</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZE-lc-do7">
-                                <rect key="frame" x="327" y="511" width="32" height="30"/>
+                                <rect key="frame" x="327" y="447" width="32" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NZE-lc-do7" secondAttribute="height" multiplier="16:15" id="R9L-ws-jse"/>
                                 </constraints>
@@ -523,7 +612,7 @@ Or the Tutorials tab for individual lessons</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bzg-d9-Gb5" userLabel="Label View">
-                                <rect key="frame" x="20" y="486" width="343" height="28"/>
+                                <rect key="frame" x="20" y="422" width="343" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0M-6Y-dWH">
                                         <rect key="frame" x="8" y="5" width="327" height="18"/>
@@ -718,7 +807,7 @@ Or the Tutorials tab for individual lessons</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7z7-Iz-AYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="993.55322338830592"/>
+            <point key="canvasLocation" x="2033" y="1153"/>
         </scene>
         <!--Tutorials-->
         <scene sceneID="Cc9-dF-u2j">
@@ -738,7 +827,7 @@ Or the Tutorials tab for individual lessons</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNf-HY-ytW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="152"/>
+            <point key="canvasLocation" x="2033" y="152"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="ii2-Zn-RyU">
@@ -753,7 +842,7 @@ Or the Tutorials tab for individual lessons</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kjT-uK-tqC" id="Boo-1U-aza">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmX-Xd-bIt">
@@ -783,7 +872,7 @@ Or the Tutorials tab for individual lessons</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NlQ-w6-thy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1682" y="1006"/>
+            <point key="canvasLocation" x="2929" y="1050"/>
         </scene>
         <!--books-->
         <scene sceneID="ONa-AR-cJc">
@@ -801,7 +890,7 @@ Or the Tutorials tab for individual lessons</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wh-GF-cBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1682" y="152"/>
+            <point key="canvasLocation" x="2929" y="152"/>
         </scene>
         <!--Home-->
         <scene sceneID="i9Q-1u-hgK">
@@ -844,6 +933,6 @@ Or the Tutorials tab for individual lessons</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JTw-tT-f88"/>
-        <segue reference="Tcd-dn-iIH"/>
+        <segue reference="fKD-SZ-GcH"/>
     </inferredMetricsTieBreakers>
 </document>
