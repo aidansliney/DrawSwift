@@ -90,10 +90,13 @@ class PopUpViewController: UIViewController {
             }
         });
     }
-
-    @IBAction func closePopup(_ sender: Any) {
+    
+    
+    @IBAction func closePopUp(_ sender: Any) {
         self.removeAnimate()
     }
+    
+
     
     @IBAction func purchaseBook(_ sender: Any) {
         RageProducts.store.buyProduct(products[parentBookNumber])

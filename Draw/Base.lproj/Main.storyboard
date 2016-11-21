@@ -512,25 +512,23 @@ Or the Tutorials tab for individual lessons</string>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6od-3n-dQp">
-                                <rect key="frame" x="52" y="99" width="270" height="469"/>
+                                <rect key="frame" x="20" y="50" width="335" height="602"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b01isocover" translatesAutoresizingMaskIntoConstraints="NO" id="Ull-Av-99H">
-                                        <rect key="frame" x="22" y="22" width="226" height="249.5"/>
+                                        <rect key="frame" x="76" y="10" width="182" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ull-Av-99H" secondAttribute="height" multiplier="106:117" id="MZ4-SF-hiH"/>
+                                            <constraint firstAttribute="height" constant="200" id="lal-Dk-qk4"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGZ-Fl-O32">
-                                        <rect key="frame" x="8" y="279" width="254" height="42"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="qGZ-Fl-O32" secondAttribute="height" multiplier="127:21" id="LM8-Na-oHi"/>
-                                        </constraints>
+                                        <rect key="frame" x="8" y="218" width="319" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvI-Yw-wja">
-                                        <rect key="frame" x="117" y="417" width="37" height="32"/>
+                                        <rect key="frame" x="149" y="550" width="37" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Price">
                                             <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -539,27 +537,51 @@ Or the Tutorials tab for individual lessons</string>
                                             <action selector="purchaseBook:" destination="cxl-ua-930" eventType="touchUpInside" id="wq5-yy-87V"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8h-l8-oUJ">
+                                        <rect key="frame" x="8" y="246" width="319" height="81.5"/>
+                                        <string key="text">This book contains multiples pages that will train you in the art of drawing. This book you full access to all the tutorial pages it contains.  Buy now. Own forever.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="qGZ-Fl-O32" firstAttribute="leading" secondItem="6od-3n-dQp" secondAttribute="leading" constant="8" id="6Cu-1s-Vx9"/>
-                                    <constraint firstAttribute="width" constant="270" id="9jv-kt-wW6"/>
-                                    <constraint firstItem="qGZ-Fl-O32" firstAttribute="top" secondItem="Ull-Av-99H" secondAttribute="bottom" constant="8" id="ANm-Fx-ev9"/>
-                                    <constraint firstAttribute="bottom" secondItem="SvI-Yw-wja" secondAttribute="bottom" constant="20" id="b97-05-4fL"/>
-                                    <constraint firstItem="Ull-Av-99H" firstAttribute="leading" secondItem="6od-3n-dQp" secondAttribute="leading" constant="22" id="cKd-Ns-R51"/>
-                                    <constraint firstItem="Ull-Av-99H" firstAttribute="top" secondItem="6od-3n-dQp" secondAttribute="top" constant="22" id="faP-w2-pIT"/>
-                                    <constraint firstAttribute="height" constant="469" id="iIx-ZE-DiT"/>
-                                    <constraint firstItem="SvI-Yw-wja" firstAttribute="centerX" secondItem="6od-3n-dQp" secondAttribute="centerX" id="onx-vz-vgi"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ull-Av-99H" secondAttribute="trailing" constant="22" id="sek-1J-rDY"/>
+                                    <constraint firstItem="Ull-Av-99H" firstAttribute="centerX" secondItem="6od-3n-dQp" secondAttribute="centerX" id="HEV-Fy-wps"/>
+                                    <constraint firstAttribute="trailing" secondItem="p8h-l8-oUJ" secondAttribute="trailing" constant="8" id="VL3-J6-kOs"/>
+                                    <constraint firstItem="p8h-l8-oUJ" firstAttribute="leading" secondItem="6od-3n-dQp" secondAttribute="leading" constant="8" id="Yg0-Yi-37n"/>
+                                    <constraint firstItem="Ull-Av-99H" firstAttribute="top" secondItem="6od-3n-dQp" secondAttribute="top" constant="10" id="faP-w2-pIT"/>
+                                    <constraint firstItem="qGZ-Fl-O32" firstAttribute="top" secondItem="Ull-Av-99H" secondAttribute="bottom" constant="8" id="i1e-UP-t1m"/>
+                                    <constraint firstItem="SvI-Yw-wja" firstAttribute="centerX" secondItem="6od-3n-dQp" secondAttribute="centerX" id="lkd-B9-aVS"/>
+                                    <constraint firstItem="p8h-l8-oUJ" firstAttribute="top" secondItem="qGZ-Fl-O32" secondAttribute="bottom" constant="7.5" id="r4D-Fk-YVe"/>
                                     <constraint firstAttribute="trailing" secondItem="qGZ-Fl-O32" secondAttribute="trailing" constant="8" id="xbp-AP-TCW"/>
+                                    <constraint firstAttribute="bottom" secondItem="SvI-Yw-wja" secondAttribute="bottom" constant="20" id="xj4-X4-Tok"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpi-2q-bSW">
+                                <rect key="frame" x="308" y="25" width="46" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="DSx-qq-QL9"/>
+                                    <constraint firstAttribute="height" constant="14" id="KIB-4Y-dac"/>
+                                </constraints>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closePopUp:" destination="cxl-ua-930" eventType="touchUpInside" id="NWx-XI-ncE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6od-3n-dQp" firstAttribute="centerY" secondItem="b7b-1d-bUc" secondAttribute="centerY" id="84T-ZO-ZCe"/>
-                            <constraint firstItem="6od-3n-dQp" firstAttribute="centerX" secondItem="b7b-1d-bUc" secondAttribute="centerX" id="LJk-ry-Ndc"/>
+                            <constraint firstAttribute="trailing" secondItem="6od-3n-dQp" secondAttribute="trailing" constant="20" id="8Wy-iO-w6g"/>
+                            <constraint firstItem="bpi-2q-bSW" firstAttribute="top" secondItem="KSe-hm-zUr" secondAttribute="bottom" constant="5" id="F2D-Tp-Qm4"/>
+                            <constraint firstItem="eeL-2R-pDg" firstAttribute="top" secondItem="6od-3n-dQp" secondAttribute="bottom" constant="15" id="L1W-pm-7Oa"/>
                             <constraint firstItem="NeE-cu-6Kc" firstAttribute="top" secondItem="b7b-1d-bUc" secondAttribute="top" id="S2H-Jo-zuD"/>
+                            <constraint firstItem="6od-3n-dQp" firstAttribute="leading" secondItem="b7b-1d-bUc" secondAttribute="leading" constant="20" id="aNI-DU-An9"/>
+                            <constraint firstItem="6od-3n-dQp" firstAttribute="top" secondItem="KSe-hm-zUr" secondAttribute="bottom" constant="30" id="bKp-fb-P1z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bpi-2q-bSW" secondAttribute="trailing" constant="5" id="dA7-NJ-jHX"/>
                             <constraint firstItem="NeE-cu-6Kc" firstAttribute="leading" secondItem="b7b-1d-bUc" secondAttribute="leading" id="gEq-u1-oIt"/>
                             <constraint firstItem="eeL-2R-pDg" firstAttribute="top" secondItem="NeE-cu-6Kc" secondAttribute="bottom" id="r1I-aE-970"/>
                             <constraint firstAttribute="trailing" secondItem="NeE-cu-6Kc" secondAttribute="trailing" id="vDP-CX-cud"/>
@@ -584,11 +606,11 @@ Or the Tutorials tab for individual lessons</string>
                         <viewControllerLayoutGuide type="bottom" id="EAu-Xb-bTQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GOV-W1-him">
-                        <rect key="frame" x="0.0" y="64" width="375" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b01t01p01" translatesAutoresizingMaskIntoConstraints="NO" id="HCE-Jg-4JW">
-                                <rect key="frame" x="25" y="0.0" width="325" height="523"/>
+                                <rect key="frame" x="25" y="64" width="325" height="523"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HCE-Jg-4JW" secondAttribute="height" multiplier="125:201" id="TPE-ap-3LM"/>
@@ -612,7 +634,7 @@ Or the Tutorials tab for individual lessons</string>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXV-wq-jhY">
-                                <rect key="frame" x="16" y="447" width="59" height="30"/>
+                                <rect key="frame" x="16" y="511" width="59" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oXV-wq-jhY" secondAttribute="height" multiplier="59:30" id="jAu-R6-d8J"/>
                                     <constraint firstAttribute="width" secondItem="oXV-wq-jhY" secondAttribute="height" multiplier="59:30" id="vcf-Ax-R9X"/>
@@ -623,7 +645,7 @@ Or the Tutorials tab for individual lessons</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZE-lc-do7">
-                                <rect key="frame" x="327" y="447" width="32" height="30"/>
+                                <rect key="frame" x="327" y="511" width="32" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NZE-lc-do7" secondAttribute="height" multiplier="16:15" id="R9L-ws-jse"/>
                                 </constraints>
@@ -633,7 +655,7 @@ Or the Tutorials tab for individual lessons</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bzg-d9-Gb5" userLabel="Label View">
-                                <rect key="frame" x="20" y="422" width="343" height="28"/>
+                                <rect key="frame" x="20" y="486" width="343" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0M-6Y-dWH">
                                         <rect key="frame" x="8" y="5" width="327" height="18"/>
@@ -965,7 +987,7 @@ Or the Tutorials tab for individual lessons</string>
         <image name="videothumb" width="852" height="479"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fKD-SZ-GcH"/>
         <segue reference="XHX-kh-FMQ"/>
+        <segue reference="Tcd-dn-iIH"/>
     </inferredMetricsTieBreakers>
 </document>

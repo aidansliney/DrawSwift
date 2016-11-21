@@ -94,6 +94,9 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         if( !RageProducts.store.isProductPurchased(pT.key!)){
             cell.myLock.text  = "locked"
         }
+        else{
+            cell.myLock.text  = "open"
+        }
         
         return cell
     }
