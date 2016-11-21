@@ -3,6 +3,7 @@
 
 
 let homeTopBook = 3
+var purchased = false
 
 let bookData = [
     Book(key: "book001",bookname:"book 01",level: 1, title:"Heroic Male Beginners ¾ View",  cover: "b01isocover", banner: "b03banner", tutorial: book1Tutorials ),

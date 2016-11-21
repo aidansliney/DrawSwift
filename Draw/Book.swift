@@ -51,6 +51,10 @@ struct Tutorial {
     }
 }
 
+struct MyVariables {
+    static var yourVariable = "someString"
+}
+
 
 
 

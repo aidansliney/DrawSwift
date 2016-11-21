@@ -8,6 +8,7 @@
 
 import UIKit
 import StoreKit
+import EZLoadingActivity
 
 class PopUpViewController: UIViewController {
     
@@ -23,10 +24,9 @@ class PopUpViewController: UIViewController {
     @IBOutlet weak var buyButton: UIButton!
     
     override func viewDidLoad() {
-        
+    
         super.viewDidLoad()
         self.showAnimate()
-        
         //if parent is bookpage
         if let parentVC = self.parent as? BookDetailController {
             parentBookNumber = parentVC.passedBookNumber
@@ -66,8 +66,26 @@ class PopUpViewController: UIViewController {
                 self.buyButton.setTitle("Purchased", for: .normal)
             }
         }
+    
+        //        Timer.scheduledTimer(timeInterval: 4.0, target: self, selector: #selector(PopUpViewController.sayHello), userInfo: nil, repeats: true)
+        //
     }
+//
+//
+//    func sayHello()
+//    {
+//        
+//        print ("time")
+//        if (purchased)
+//        {
+//            purchased = false
+//            self.removeAnimate()
+//            
+//        }
+//    }
+    
 
+    
     func showAnimate()
     {
         self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
@@ -91,16 +109,22 @@ class PopUpViewController: UIViewController {
         });
     }
     
+
     
     @IBAction func closePopUp(_ sender: Any) {
         self.removeAnimate()
     }
     
 
-    
     @IBAction func purchaseBook(_ sender: Any) {
         RageProducts.store.buyProduct(products[parentBookNumber])
+        EZLoadingActivity.show("Loading...", disableUI: true)
     }
+    
+
 }
+
+
+
 
 

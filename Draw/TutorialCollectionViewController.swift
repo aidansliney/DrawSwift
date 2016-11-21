@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Font_Awesome_Swift
 
 private let reuseIdentifier = "Cell"
 
@@ -79,16 +80,19 @@ class TutorialCollectionViewController: UICollectionViewController {
             let color = UIColor(red: 0.5, green: 1,blue: 1,alpha: 1)
             levelLabel.backgroundColor = color
             levelLabel.text = tutorial.level
+            
            
             //set the locked tag
             if let lockedLabel = cell.viewWithTag(14) as? UILabel { //3
+                lockedLabel.textColor = UIColor(red: 209/255, green: 209/255, blue: 209/255, alpha: 1.0)
                 
                 if( RageProducts.store.isProductPurchased(tutorial.key!)){
-                     lockedLabel.text = "open"
+                    lockedLabel.setFAIcon(icon: FAType.FACheck, iconSize: 17)
+                    
                 }
                 else
                 {
-                lockedLabel.text = "Locked"
+                    lockedLabel.setFAIcon(icon: FAType.FALock, iconSize: 17)
                 }
             }
         }

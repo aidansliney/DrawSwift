@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Font_Awesome_Swift
 
 class BookDetailController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -90,12 +91,16 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         cell.layer.borderWidth = 0.3
         cell.layer.cornerRadius = 2
         
+        cell.myLock.textColor = UIColor(red: 209/255, green: 209/255, blue: 209/255, alpha: 1.0)
         
         if( !RageProducts.store.isProductPurchased(pT.key!)){
             cell.myLock.text  = "locked"
+            
+             cell.myLock.setFAIcon(icon: FAType.FALock, iconSize: 15)
+            
         }
         else{
-            cell.myLock.text  = "open"
+            cell.myLock.setFAIcon(icon: FAType.FACheck, iconSize: 15)
         }
         
         return cell

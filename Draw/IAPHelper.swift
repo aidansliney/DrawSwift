@@ -21,6 +21,8 @@
  */
 
 import StoreKit
+import EZLoadingActivity
+import UIKit
 
 public typealias ProductIdentifier = String
 public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> ()
@@ -139,8 +141,11 @@ extension IAPHelper: SKPaymentTransactionObserver {
     
     private func complete(transaction: SKPaymentTransaction) {
         print("complete...")
+
         deliverPurchaseNotificationFor(identifier: transaction.payment.productIdentifier)
         SKPaymentQueue.default().finishTransaction(transaction)
+        EZLoadingActivity.hide(true, animated: true)
+        purchased = true
     }
     
     private func restore(transaction: SKPaymentTransaction) {
@@ -153,6 +158,7 @@ extension IAPHelper: SKPaymentTransactionObserver {
     
     private func fail(transaction: SKPaymentTransaction) {
         print("fail...")
+        EZLoadingActivity.hide(false, animated: true )
         if let transactionError = transaction.error as? NSError {
             if transactionError.code != SKError.paymentCancelled.rawValue {
                 print("Transaction Error: \(transaction.error?.localizedDescription)")
@@ -170,4 +176,8 @@ extension IAPHelper: SKPaymentTransactionObserver {
         UserDefaults.standard.synchronize()
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseNotification), object: identifier)
     }
+    
+    
+    
+    
 }
