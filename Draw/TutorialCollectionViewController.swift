@@ -19,6 +19,7 @@ class TutorialCollectionViewController: UICollectionViewController {
     var passedBook = "book 01"
     var passedT = ""
     var passedLength = 0
+    var passBookNumber = 0
     
     
     
@@ -117,13 +118,14 @@ class TutorialCollectionViewController: UICollectionViewController {
     }
     
 
-    //go to TutorialView
+    //select cell to go to TutorialView
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         rowSelected = indexPath.row
         let tutorial = self.tutorial[indexPath.row] as Tutorial
         passedBook = tutorial.book!
         passedT = tutorial.t!
         passedLength = tutorial.length!
+        passBookNumber = tutorial.bookNumber!
         
         if( RageProducts.store.isProductPurchased(tutorial.key!)){
         
