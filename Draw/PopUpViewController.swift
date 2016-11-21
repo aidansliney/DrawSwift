@@ -47,6 +47,14 @@ class PopUpViewController: UIViewController {
                 self.products = products!
             }
             
+        // Button
+        self.buyButton.backgroundColor = .clear
+        self.buyButton.layer.cornerRadius = 5
+        self.buyButton.layer.borderWidth = 1
+        self.buyButton.layer.borderColor = UIColor.blue.cgColor
+            
+        self.buyButton.contentEdgeInsets = UIEdgeInsetsMake(10,10,10,10)
+            
         // Set button text as price
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency

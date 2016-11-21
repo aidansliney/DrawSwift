@@ -509,75 +509,60 @@ Or the Tutorials tab for individual lessons</string>
                                         </visualEffectView>
                                     </subviews>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6od-3n-dQp">
                                 <rect key="frame" x="52" y="99" width="270" height="469"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4au-7S-Wzi">
-                                        <rect key="frame" x="78" y="431" width="114" height="30"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b01isocover" translatesAutoresizingMaskIntoConstraints="NO" id="Ull-Av-99H">
+                                        <rect key="frame" x="22" y="22" width="226" height="249.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="0d3-SO-wDI"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Sla-E8-SsA"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="114" id="ZqX-0a-B3Y"/>
-                                            <constraint firstAttribute="width" constant="114" id="aZ2-2O-stw"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title="Close">
-                                            <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="closePopup:" destination="cxl-ua-930" eventType="touchUpInside" id="FRR-yO-22t"/>
-                                        </connections>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ull-Av-99H">
-                                        <rect key="frame" x="0.0" y="3" width="270" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Ull-Av-99H" secondAttribute="height" multiplier="135:64" id="DX0-PY-2xC"/>
+                                            <constraint firstAttribute="width" secondItem="Ull-Av-99H" secondAttribute="height" multiplier="106:117" id="MZ4-SF-hiH"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGZ-Fl-O32">
-                                        <rect key="frame" x="8" y="139" width="254" height="21"/>
+                                        <rect key="frame" x="8" y="279" width="254" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qGZ-Fl-O32" secondAttribute="height" multiplier="127:21" id="LM8-Na-oHi"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvI-Yw-wja">
+                                        <rect key="frame" x="117" y="417" width="37" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Price">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="purchaseBook:" destination="cxl-ua-930" eventType="touchUpInside" id="wq5-yy-87V"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Ull-Av-99H" firstAttribute="leading" secondItem="6od-3n-dQp" secondAttribute="leading" id="3A6-7r-hMs"/>
+                                    <constraint firstItem="qGZ-Fl-O32" firstAttribute="leading" secondItem="6od-3n-dQp" secondAttribute="leading" constant="8" id="6Cu-1s-Vx9"/>
                                     <constraint firstAttribute="width" constant="270" id="9jv-kt-wW6"/>
-                                    <constraint firstItem="Ull-Av-99H" firstAttribute="top" secondItem="6od-3n-dQp" secondAttribute="top" constant="3" id="E30-NO-T2A"/>
-                                    <constraint firstAttribute="trailing" secondItem="qGZ-Fl-O32" secondAttribute="trailing" constant="8" id="M3J-Jg-Gdp"/>
-                                    <constraint firstItem="4au-7S-Wzi" firstAttribute="centerX" secondItem="6od-3n-dQp" secondAttribute="centerX" id="PhN-ei-q6s"/>
-                                    <constraint firstItem="qGZ-Fl-O32" firstAttribute="top" secondItem="Ull-Av-99H" secondAttribute="bottom" constant="8" id="Py4-q1-357"/>
-                                    <constraint firstItem="qGZ-Fl-O32" firstAttribute="top" secondItem="Ull-Av-99H" secondAttribute="bottom" constant="8" id="Qn0-GI-Snl"/>
+                                    <constraint firstItem="qGZ-Fl-O32" firstAttribute="top" secondItem="Ull-Av-99H" secondAttribute="bottom" constant="8" id="ANm-Fx-ev9"/>
+                                    <constraint firstAttribute="bottom" secondItem="SvI-Yw-wja" secondAttribute="bottom" constant="20" id="b97-05-4fL"/>
+                                    <constraint firstItem="Ull-Av-99H" firstAttribute="leading" secondItem="6od-3n-dQp" secondAttribute="leading" constant="22" id="cKd-Ns-R51"/>
+                                    <constraint firstItem="Ull-Av-99H" firstAttribute="top" secondItem="6od-3n-dQp" secondAttribute="top" constant="22" id="faP-w2-pIT"/>
                                     <constraint firstAttribute="height" constant="469" id="iIx-ZE-DiT"/>
-                                    <constraint firstItem="qGZ-Fl-O32" firstAttribute="leading" secondItem="6od-3n-dQp" secondAttribute="leading" constant="8" id="muQ-V8-gsq"/>
-                                    <constraint firstAttribute="bottom" secondItem="4au-7S-Wzi" secondAttribute="bottom" constant="8" id="rJW-b4-mui"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ull-Av-99H" secondAttribute="trailing" id="zH4-ST-sQB"/>
+                                    <constraint firstItem="SvI-Yw-wja" firstAttribute="centerX" secondItem="6od-3n-dQp" secondAttribute="centerX" id="onx-vz-vgi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ull-Av-99H" secondAttribute="trailing" constant="22" id="sek-1J-rDY"/>
+                                    <constraint firstAttribute="trailing" secondItem="qGZ-Fl-O32" secondAttribute="trailing" constant="8" id="xbp-AP-TCW"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvI-Yw-wja">
-                                <rect key="frame" x="52" y="318" width="270" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="purchaseBook:" destination="cxl-ua-930" eventType="touchUpInside" id="wq5-yy-87V"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SvI-Yw-wja" firstAttribute="leading" secondItem="b7b-1d-bUc" secondAttribute="leadingMargin" constant="36" id="5lq-v0-7Be"/>
                             <constraint firstItem="6od-3n-dQp" firstAttribute="centerY" secondItem="b7b-1d-bUc" secondAttribute="centerY" id="84T-ZO-ZCe"/>
                             <constraint firstItem="6od-3n-dQp" firstAttribute="centerX" secondItem="b7b-1d-bUc" secondAttribute="centerX" id="LJk-ry-Ndc"/>
-                            <constraint firstItem="SvI-Yw-wja" firstAttribute="centerY" secondItem="b7b-1d-bUc" secondAttribute="centerY" id="MWc-Pm-M9Z"/>
                             <constraint firstItem="NeE-cu-6Kc" firstAttribute="top" secondItem="b7b-1d-bUc" secondAttribute="top" id="S2H-Jo-zuD"/>
-                            <constraint firstItem="SvI-Yw-wja" firstAttribute="centerX" secondItem="b7b-1d-bUc" secondAttribute="centerX" id="ang-o7-Tsj"/>
                             <constraint firstItem="NeE-cu-6Kc" firstAttribute="leading" secondItem="b7b-1d-bUc" secondAttribute="leading" id="gEq-u1-oIt"/>
                             <constraint firstItem="eeL-2R-pDg" firstAttribute="top" secondItem="NeE-cu-6Kc" secondAttribute="bottom" id="r1I-aE-970"/>
                             <constraint firstAttribute="trailing" secondItem="NeE-cu-6Kc" secondAttribute="trailing" id="vDP-CX-cud"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SvI-Yw-wja" secondAttribute="trailing" constant="37" id="yxb-2h-8vF"/>
                         </constraints>
                     </view>
                     <connections>
@@ -966,6 +951,7 @@ Or the Tutorials tab for individual lessons</string>
     </scenes>
     <resources>
         <image name="b00isocover" width="600" height="421"/>
+        <image name="b01isocover" width="600" height="688"/>
         <image name="b01t01p01" width="400" height="710"/>
         <image name="b02isocover" width="600" height="688"/>
         <image name="b06banner" width="600" height="188"/>
