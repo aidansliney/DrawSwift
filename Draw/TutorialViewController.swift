@@ -143,7 +143,10 @@ class TutorialViewController: UIViewController {
     }
     
     @IBAction func goBack(_ sender: AnyObject) {
-        navigationController?.popViewController(animated: true)
+        if let navigationController = self.navigationController
+        {
+            navigationController.popViewController(animated: true)
+        }
     }
     
     //correct

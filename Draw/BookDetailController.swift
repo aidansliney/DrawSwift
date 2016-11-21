@@ -139,6 +139,9 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     @IBAction func goBack(_ sender: AnyObject) {
-        self.navigationController?.popViewController(animated: true)
+        if let navigationController = self.navigationController
+        {
+            navigationController.popViewController(animated: true)
+        }
     }
 }
