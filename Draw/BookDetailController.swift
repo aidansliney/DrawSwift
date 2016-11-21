@@ -10,8 +10,6 @@ import UIKit
 
 class BookDetailController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    
-    
     //passed here
     var passedBookNumber: Int? // 0 = book01
     
@@ -26,9 +24,9 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     var book:[Book] = bookData
     var rowSelected: Int?
     var passedBook = "Book 01"
+    var passedKey = "Book01"
     var passedT = ""
     var passedLength = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +89,12 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         cell.layer.borderColor = UIColor( red: 50/255, green: 50/255, blue:50/255, alpha: 0.3 ).cgColor
         cell.layer.borderWidth = 0.3
         cell.layer.cornerRadius = 2
+        
+        
+        if( !RageProducts.store.isProductPurchased(pT.key!)){
+            cell.myLock.text  = "locked"
+        }
+        
         return cell
     }
     
@@ -99,7 +103,6 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
     @IBOutlet weak var level: UILabel!
     @IBOutlet weak var bookname: UILabel!
     @IBOutlet weak var h1: UILabel!
-    
     
     //Preparing to go to the tutorial page
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -111,24 +114,30 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         }
     }
     
-    //Go to the tutorial page
+    //touch cell  to the tutorial page or to the sell popup
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         rowSelected = indexPath.row
         let pT =  (self.passedTutorial?[indexPath.row])! as Draw.Tutorial
         passedBook = pT.book!
         passedT = pT.t!
         passedLength = pT.length!
-        performSegue(withIdentifier: "toTutorialDetailFromBookSeg", sender: passedT)
+        passedKey = pT.key!
+        
+        if( !RageProducts.store.isProductPurchased(pT.key!)){
+            
+            let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
+            self.addChildViewController(popOverVC)
+            popOverVC.view.frame = self.view.frame
+            self.view.addSubview(popOverVC.view)
+            popOverVC.didMove(toParentViewController: self)
+    
+        }
+        else //its open
+        {
+                    performSegue(withIdentifier: "toTutorialDetailFromBookSeg", sender: passedT)
+        }
     }
     
-    @IBAction func showPopup(_ sender: Any) {
-        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
-        self.addChildViewController(popOverVC)
-        popOverVC.view.frame = self.view.frame
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMove(toParentViewController: self)
-    
-    }
     @IBAction func goBack(_ sender: AnyObject) {
         self.navigationController?.popViewController(animated: true)
     }

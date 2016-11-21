@@ -21,9 +21,6 @@ class TutorialCollectionViewController: UICollectionViewController {
     var passedLength = 0
     var passBookNumber = 0
     
-    
-    
- 
     override func viewDidAppear(_ animated: Bool)
         
     {
@@ -125,13 +122,21 @@ class TutorialCollectionViewController: UICollectionViewController {
         passedBook = tutorial.book!
         passedT = tutorial.t!
         passedLength = tutorial.length!
-        passBookNumber = tutorial.bookNumber!
+        passBookNumber = tutorial.bookNumber!-1
         
         if( RageProducts.store.isProductPurchased(tutorial.key!)){
         
-        performSegue(withIdentifier: "toTutorialDetailSeg", sender: passedT)
+       // performSegue(withIdentifier: "toTutorialDetailSeg", sender: passedT)
             
         }
+        
+        //open sell popup
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+        
     
     }
     
