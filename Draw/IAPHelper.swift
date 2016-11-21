@@ -27,9 +27,13 @@ import UIKit
 public typealias ProductIdentifier = String
 public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> ()
 
-
+protocol IAPHelperDelegate {
+    func manageMessage()
+}
 
 open class IAPHelper : NSObject  {
+    
+    var delegate:IAPHelperDelegate?
     
     static let IAPHelperPurchaseNotification = "IAPHelperPurchaseNotification"
     
@@ -58,6 +62,8 @@ open class IAPHelper : NSObject  {
 // MARK: - StoreKit API
 
 extension IAPHelper {
+    
+    
     
     public func requestProducts(completionHandler: @escaping ProductsRequestCompletionHandler) {
         productsRequest?.cancel()
@@ -146,6 +152,13 @@ extension IAPHelper: SKPaymentTransactionObserver {
         SKPaymentQueue.default().finishTransaction(transaction)
         EZLoadingActivity.hide(true, animated: true)
         purchased = true
+        self.delegate!.manageMessage()
+        
+    }
+    
+    func manageMessage()
+    {
+    
     }
     
     private func restore(transaction: SKPaymentTransaction) {

@@ -10,7 +10,18 @@ import UIKit
 import StoreKit
 import EZLoadingActivity
 
-class PopUpViewController: UIViewController {
+
+
+class PopUpViewController:  UIViewController,IAPHelperDelegate {
+    
+    static let sharedInstance = IAPHelper()
+    Manager.delegate = self
+    
+    func manageMessage() {
+        print("heffe")
+       
+    }
+    
     
     var parentBanner: String!
     var parentBookName: String!
@@ -23,10 +34,15 @@ class PopUpViewController: UIViewController {
     @IBOutlet weak var bookName: UILabel!
     @IBOutlet weak var buyButton: UIButton!
     
+  
+        
     override func viewDidLoad() {
     
         super.viewDidLoad()
         self.showAnimate()
+        
+       
+        
         //if parent is bookpage
         if let parentVC = self.parent as? BookDetailController {
             parentBookNumber = parentVC.passedBookNumber
@@ -66,25 +82,8 @@ class PopUpViewController: UIViewController {
                 self.buyButton.setTitle("Purchased", for: .normal)
             }
         }
-    
-        //        Timer.scheduledTimer(timeInterval: 4.0, target: self, selector: #selector(PopUpViewController.sayHello), userInfo: nil, repeats: true)
-        //
-    }
-//
-//
-//    func sayHello()
-//    {
-//        
-//        print ("time")
-//        if (purchased)
-//        {
-//            purchased = false
-//            self.removeAnimate()
-//            
-//        }
-//    }
-    
 
+    }
     
     func showAnimate()
     {
