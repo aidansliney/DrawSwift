@@ -40,8 +40,6 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         passedH1 = book.cover!
         passedTutorial = book.tutorial!
        
-        
-        
         //set title and image
         self.navigationItem.title = passedBookname
         bookimage.image = UIImage(named: passedBanner!)
@@ -62,7 +60,6 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         {
             navigationController?.navigationBar.barTintColor = UIColor( red: 255/255, green: 80/255, blue:80/255, alpha: 0.2 )
         }
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -93,16 +90,13 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         
         cell.myLock.textColor = UIColor(red: 209/255, green: 209/255, blue: 209/255, alpha: 1.0)
         
-        if( !RageProducts.store.isProductPurchased(pT.key!)){
-            cell.myLock.text  = "locked"
-            
-             cell.myLock.setFAIcon(icon: FAType.FALock, iconSize: 15)
-            
-        }
-        else{
+        if( RageProducts.store.isProductPurchased(pT.key!) || freeBooks.contains(pT.key!) ){
             cell.myLock.setFAIcon(icon: FAType.FACheck, iconSize: 15)
         }
-        
+        else{
+            cell.myLock.text  = "locked"
+            cell.myLock.setFAIcon(icon: FAType.FALock, iconSize: 15)
+        }
         return cell
     }
     
@@ -121,7 +115,6 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
             destinationVC.passedLength = passedLength
         }
     }
-    
     //touch cell  to the tutorial page or to the sell popup
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         rowSelected = indexPath.row
@@ -131,18 +124,18 @@ class BookDetailController: UIViewController, UICollectionViewDataSource, UIColl
         passedLength = pT.length!
         passedKey = pT.key!
         
-        if( !RageProducts.store.isProductPurchased(pT.key!)){
+        if( RageProducts.store.isProductPurchased(pT.key!) || freeBooks.contains(pT.key!)){
             
+          performSegue(withIdentifier: "toTutorialDetailFromBookSeg", sender: passedT)
+    
+        }
+        else //its open
+        {
             let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
             self.addChildViewController(popOverVC)
             popOverVC.view.frame = self.view.frame
             self.view.addSubview(popOverVC.view)
             popOverVC.didMove(toParentViewController: self)
-    
-        }
-        else //its open
-        {
-                    performSegue(withIdentifier: "toTutorialDetailFromBookSeg", sender: passedT)
         }
     }
     

@@ -734,7 +734,6 @@ Or the Tutorials tab for individual lessons</string>
                         <segue destination="S1M-io-oSC" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="AYs-Jz-vrj" kind="relationship" relationship="viewControllers" id="dTx-91-5WP"/>
                         <segue destination="5Pl-4s-iBz" kind="relationship" relationship="viewControllers" id="06E-FT-N24"/>
-                        <segue destination="5eg-Td-lnd" kind="relationship" relationship="viewControllers" id="guO-sG-1xF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -867,7 +866,7 @@ Or the Tutorials tab for individual lessons</string>
         <scene sceneID="Cc9-dF-u2j">
             <objects>
                 <navigationController title="Tutorials" automaticallyAdjustsScrollViewInsets="NO" id="5Pl-4s-iBz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Books" image="list" id="bQt-lH-p3N"/>
+                    <tabBarItem key="tabBarItem" title="Tutorials" image="list" id="bQt-lH-p3N"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Mh2-la-ehB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

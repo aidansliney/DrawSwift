@@ -86,9 +86,8 @@ class TutorialCollectionViewController: UICollectionViewController {
             if let lockedLabel = cell.viewWithTag(14) as? UILabel { //3
                 lockedLabel.textColor = UIColor(red: 209/255, green: 209/255, blue: 209/255, alpha: 1.0)
                 
-                if( RageProducts.store.isProductPurchased(tutorial.key!)){
+                if( RageProducts.store.isProductPurchased(tutorial.key!) || freeBooks.contains(tutorial.key!)){
                     lockedLabel.setFAIcon(icon: FAType.FACheck, iconSize: 17)
-                    
                 }
                 else
                 {
@@ -128,7 +127,7 @@ class TutorialCollectionViewController: UICollectionViewController {
         passedLength = tutorial.length!
         passBookNumber = tutorial.bookNumber!-1
         
-        if( RageProducts.store.isProductPurchased(tutorial.key!)){
+        if( RageProducts.store.isProductPurchased(tutorial.key!) || freeBooks.contains(tutorial.key!)){
             performSegue(withIdentifier: "toTutorialDetailSeg", sender: passedT)
         }
         else{
