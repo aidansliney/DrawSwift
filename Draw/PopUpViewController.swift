@@ -12,15 +12,9 @@ import EZLoadingActivity
 
 
 
-class PopUpViewController:  UIViewController,IAPHelperDelegate {
+class PopUpViewController:  UIViewController {
     
 
-    
-    func manageMessage() {
-        print("heffe")
-       
-    }
-    
     
     var parentBanner: String!
     var parentBookName: String!
@@ -37,8 +31,7 @@ class PopUpViewController:  UIViewController,IAPHelperDelegate {
         
     override func viewDidLoad() {
         
-        let Manager = IAPHelper(productIds: Set(["Book001","Book02","Book03","Book04","Book05","Book06","Book07","Book08","Book09","Book10",]))
-        Manager.delegate = self
+   
     
         super.viewDidLoad()
         self.showAnimate()
@@ -110,8 +103,6 @@ class PopUpViewController:  UIViewController,IAPHelperDelegate {
         });
     }
     
-
-    
     @IBAction func closePopUp(_ sender: Any) {
         self.removeAnimate()
     }
@@ -120,7 +111,19 @@ class PopUpViewController:  UIViewController,IAPHelperDelegate {
     @IBAction func purchaseBook(_ sender: Any) {
         RageProducts.store.buyProduct(products[parentBookNumber])
         EZLoadingActivity.show("Loading...", disableUI: true)
+        self.removeAnimate()
+      
     }
+    
+    //delegate method
+    func manageMessage() {
+        print("message worked")
+    }
+    
+
+
+    
+    
     
 
 }
