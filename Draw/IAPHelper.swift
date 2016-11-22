@@ -156,11 +156,7 @@ extension IAPHelper: SKPaymentTransactionObserver {
         
     }
     
-    func manageMessage()
-    {
-    
-    }
-    
+ 
     private func restore(transaction: SKPaymentTransaction) {
         guard let productIdentifier = transaction.original?.payment.productIdentifier else { return }
         

@@ -14,8 +14,7 @@ import EZLoadingActivity
 
 class PopUpViewController:  UIViewController,IAPHelperDelegate {
     
-    static let sharedInstance = IAPHelper()
-    Manager.delegate = self
+
     
     func manageMessage() {
         print("heffe")
@@ -37,6 +36,9 @@ class PopUpViewController:  UIViewController,IAPHelperDelegate {
   
         
     override func viewDidLoad() {
+        
+        let Manager = IAPHelper(productIds: Set(["Book001","Book02","Book03","Book04","Book05","Book06","Book07","Book08","Book09","Book10",]))
+        Manager.delegate = self
     
         super.viewDidLoad()
         self.showAnimate()
