@@ -149,12 +149,9 @@ extension IAPHelper: SKPaymentTransactionObserver {
         deliverPurchaseNotificationFor(identifier: transaction.payment.productIdentifier)
         SKPaymentQueue.default().finishTransaction(transaction)
         EZLoadingActivity.hide(true, animated: true)
-        purchased = true
-  
-        
     }
     
- 
+
     private func restore(transaction: SKPaymentTransaction) {
         guard let productIdentifier = transaction.original?.payment.productIdentifier else { return }
         
@@ -165,6 +162,9 @@ extension IAPHelper: SKPaymentTransactionObserver {
     
     private func fail(transaction: SKPaymentTransaction) {
         print("fail...")
+        EZLoadingActivity.Settings.FailColor = UIColor( red: 93/255, green: 142/255, blue:222/255, alpha: 0.2 )
+
+        EZLoadingActivity.Settings.FailText = "Please try again"
         EZLoadingActivity.hide(false, animated: true )
         if let transactionError = transaction.error as? NSError {
             if transactionError.code != SKError.paymentCancelled.rawValue {
