@@ -1,7 +1,7 @@
 
 let homeTopBook = 3
 var purchased = false
-let freeBooks = ["Book001","Book02"];
+let freeBooks = ["Book001","Book02","Book10"];
 
 
 let bookData = [
@@ -11,10 +11,10 @@ let bookData = [
     Book(key: "Book04",bookname:"book 04",level: 3, title:"Arm Muscles",  cover: "b04isocover",banner: "b04banner", tutorial: book4Tutorials),
     Book(key: "Book05",bookname: "book 05",level: 2, title: "Dynamic Kicking",  cover: "b05isocover",banner: "b05banner", tutorial: book5Tutorials),
     Book(key: "Book06",bookname: "book 06",level: 1, title: "Heroic Male Beginners Front View",  cover: "b06isocover",banner: "b01banner", tutorial: book6Tutorials),
-    Book(key: "Book07",bookname:"book 07",level: 1, title:"Heroic Male Intermediate Front View",  cover: "b07isocover",banner: "b03banner", tutorial: book7Tutorials),
+    Book(key: "Book07",bookname:"book 07",level: 2, title:"Heroic Male Intermediate Front View",  cover: "b07isocover",banner: "b07banner", tutorial: book7Tutorials),
     Book(key: "Book08",bookname:"book 08",level: 2, title:"Face Front View",  cover: "b08isocover",banner: "b08banner", tutorial: book8Tutorials),
-    Book(key: "Book09",bookname:"book 09",level: 2, title:"8 Awesome Heroic Poses",  cover: "b09isocover",banner: "b09banner", tutorial: book8Tutorials),
-    Book(key: "Book10",bookname:"book 10",level: 2, title:"Female Beginners 3/4 ",  cover: "b10isocover",banner: "b10banner", tutorial: book8Tutorials)]
+    Book(key: "Book10",bookname:"book 10",level: 1, title:"Superhero Poses",  cover: "b10isocover",banner: "b10banner", tutorial: book10Tutorials),
+    Book(key: "Book11",bookname:"book 11",level: 2, title:"Female Beginners 3/4 ",  cover: "b11isocover",banner: "b11banner", tutorial: book8Tutorials)]
 
 
 //tutorial
@@ -93,6 +93,17 @@ let book8Tutorials = [
     Tutorial(key:"Book08",bookNumber: 8,  book:"book08", t:"t07",image:"b08t07p07", text: "The Foot",level: "Level 2",length: 07 )
 ]
 
+let book10Tutorials = [
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t01",image:"b10t01p19", text: "Superhero Pose 1",level: "Level 1",length: 19),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t02",image:"b10t02p20", text: "Superhero Pose 2",level: "Level 1",length: 20),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t03",image:"b10t03p21", text: "Superhero Pose 3",level: "Level 1",length: 21),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t04",image:"b10t04p20", text: "Superhero Pose 4",level: "Level 1",length: 20),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t05",image:"b10t05p20", text: "Superhero Pose 5",level: "Level 1",length: 20),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t06",image:"b10t06p20", text: "Superhero Pose 6",level: "Level 1",length: 20),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t07",image:"b10t07p20", text: "Superhero Pose 7",level: "Level 1",length: 20),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t08",image:"b10t07p20", text: "Superhero Pose 8",level: "Level 1",length: 20),
+]
+
 let tutorialData = [
     Tutorial(key:"Book001",bookNumber: 1,  book:"book01", t:"t01",image:"b01t01p29", text: "Full Figure",level: "Level 1",length: 29 ),
     Tutorial(key:"Book001",bookNumber: 1,  book:"book01", t:"t02",image:"b01t02p28", text: "Basic Head",level: "Level 1",length: 28),
@@ -135,7 +146,22 @@ let tutorialData = [
     Tutorial(key:"Book07",bookNumber: 7,  book:"book07", t:"t04",image:"b07t04p10", text: "The Arm",level: "Level 2",length: 10 ),
     Tutorial(key:"Book07",bookNumber: 7,  book:"book07", t:"t05",image:"b07t05p09", text: "The Leg",level: "Level 2",length: 09 ),
     Tutorial(key:"Book07",bookNumber: 7,  book:"book07", t:"t06",image:"b07t06p11", text: "The Hand",level: "Level 2",length: 11 ),
-    Tutorial(key:"Book07",bookNumber: 7,  book:"book07", t:"t07",image:"b07t07p07", text: "The Foot",level: "Level 2",length: 07 )
+    Tutorial(key:"Book07",bookNumber: 7,  book:"book07", t:"t07",image:"b07t07p07", text: "The Foot",level: "Level 2",length: 07 ),
+    Tutorial(key:"Book08",bookNumber: 8,  book:"book08", t:"t01",image:"b08t01p19", text: "Full Figure",level: "Level 2",length: 19 ),
+    Tutorial(key:"Book08",bookNumber: 8,  book:"book08", t:"t02",image:"b08t02p22", text: "The Face",level: "Level 2",length: 22 ),
+    Tutorial(key:"Book08",bookNumber: 8,  book:"book08", t:"t03",image:"b08t03p18", text: "The Torso",level: "Level 2",length: 18 ),
+    Tutorial(key:"Book08",bookNumber: 8,  book:"book08", t:"t04",image:"b08t04p10", text: "The Arm",level: "Level 2",length: 10 ),
+    Tutorial(key:"Book08",bookNumber: 8,  book:"book08", t:"t05",image:"b08t05p09", text: "The Leg",level: "Level 2",length: 09 ),
+    Tutorial(key:"Book08",bookNumber: 8,  book:"book08", t:"t06",image:"b08t06p11", text: "The Hand",level: "Level 2",length: 11 ),
+    Tutorial(key:"Book08",bookNumber: 8,  book:"book08", t:"t07",image:"b08t07p07", text: "The Foot",level: "Level 2",length: 07 ),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t01",image:"b10t01p19", text: "Full Figure",level: "Level 1",length: 19),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t02",image:"b10t02p20", text: "The Face",level: "Level 1",length: 20),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t03",image:"b10t03p21", text: "The Torso",level: "Level 1",length: 21),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t04",image:"b10t04p20", text: "The Arm",level: "Level 1",length: 20),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t05",image:"b10t05p20", text: "The Leg",level: "Level 1",length: 20),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t06",image:"b10t06p20", text: "The Hand",level: "Level 1",length: 20),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t07",image:"b10t07p20", text: "The Foot",level: "Level 1",length: 20),
+    Tutorial(key:"Book10",bookNumber: 10,  book:"book10", t:"t08",image:"b10t07p20", text: "The Foot",level: "Level 1",length: 20)
 ]
 
 var helpTextD: [String: String] =
