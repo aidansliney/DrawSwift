@@ -152,7 +152,7 @@ class TutorialViewController: UIViewController {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
-                 if counter == 1{
+                 if counter != 1{
                     previousPage()
                 }
             case UISwipeGestureRecognizerDirection.down:
