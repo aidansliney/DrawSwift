@@ -10,11 +10,7 @@ import UIKit
 import StoreKit
 import EZLoadingActivity
 
-
-
 class PopUpViewController:  UIViewController {
-    
-
     
     var parentBanner: String!
     var parentBookName: String!
@@ -27,17 +23,11 @@ class PopUpViewController:  UIViewController {
     @IBOutlet weak var bookName: UILabel!
     @IBOutlet weak var buyButton: UIButton!
     
-  
-        
     override func viewDidLoad() {
         
-   
-    
         super.viewDidLoad()
         self.showAnimate()
-        
-       
-        
+    
         //if parent is bookpage
         if let parentVC = self.parent as? BookDetailController {
             parentBookNumber = parentVC.passedBookNumber
@@ -77,7 +67,6 @@ class PopUpViewController:  UIViewController {
                 self.buyButton.setTitle("Purchased", for: .normal)
             }
         }
-
     }
     
     func showAnimate()
@@ -107,24 +96,12 @@ class PopUpViewController:  UIViewController {
         self.removeAnimate()
     }
     
-
     @IBAction func purchaseBook(_ sender: Any) {
         RageProducts.store.buyProduct(products[parentBookNumber])
         EZLoadingActivity.show("Loading...", disableUI: true)
         self.removeAnimate()
       
     }
-    
-    //delegate method
-    func manageMessage() {
-        print("message worked")
-    }
-    
-
-
-    
-    
-    
 
 }
 
