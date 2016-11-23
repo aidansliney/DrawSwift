@@ -38,8 +38,6 @@ class TutorialViewController: UIViewController {
         
         super.viewDidLoad()
         
-        
-        
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeRight)
@@ -154,11 +152,15 @@ class TutorialViewController: UIViewController {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
-                previousPage()
+                 if counter == 1{
+                    previousPage()
+                }
             case UISwipeGestureRecognizerDirection.down:
                 print("Swiped down")
             case UISwipeGestureRecognizerDirection.left:
+                if counter != length{
                 nextPage()
+                }
             case UISwipeGestureRecognizerDirection.up:
                 print("Swiped up")
             default:

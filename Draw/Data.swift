@@ -25,23 +25,23 @@ let book0Tutorials = [
 let book1Tutorials = [
     Tutorial(key:"Book001",bookNumber: 1, book:"book01", t:"t01", image:"b01t01p29", text: "Full Figure",level: "Level 1",length: 29 ),
     Tutorial(key:"Book001",bookNumber: 1, book:"book01", t:"t02",image:"b01t02p28", text: "Basic Head",level: "Level 1",length: 28),
-    Tutorial(key:"Book001",bookNumber: 1, book:"book01", t:"t03",image:"b01t03p18", text: "Basic Hand",level: "Level 1",length: 18)]
+    Tutorial(key:"Book001",bookNumber: 1, book:"book01", t:"t03",image:"b01t03p18", text: "Basic Hand",level: "Level 1",length: 20)]
 
 let book2Tutorials = [
     Tutorial(key:"Book02",bookNumber: 2,  book:"book02", t:"t01",image:"mi3_4figure21", text: "Full Figure",level: "Level 2",length: 21 ),
-    Tutorial(key:"Book02",bookNumber: 2,  book:"book02", t:"t02",image:"mi3_4head19", text: "The Head",level: "Level 2",length: 19),
-    Tutorial(key:"Book02",bookNumber: 2,  book:"book02", t:"t03",image:"mi3_4torso18", text: "The Torso",level: "Level 2",length: 18 ),
-    Tutorial(key:"Book02",bookNumber: 2,  book:"book02", t:"t04",image:"mi3_4arm11", text: "The Arms",level: "Level 2",length: 11),
-    Tutorial(key:"Book02",bookNumber: 2,  book:"book02", t:"t05",image:"mi3_4leg10", text: "The Legs",level: "Level 2",length: 10 ),
+    Tutorial(key:"Book02",bookNumber: 2,  book:"book02", t:"t02",image:"mi3_4head19", text: "The Head",level: "Level 2",length: 25),
+    Tutorial(key:"Book02",bookNumber: 2,  book:"book02", t:"t03",image:"mi3_4torso18", text: "The Torso",level: "Level 2",length: 19 ),
+    Tutorial(key:"Book02",bookNumber: 2,  book:"book02", t:"t04",image:"mi3_4arm11", text: "The Arms",level: "Level 2",length: 12),
+    Tutorial(key:"Book02",bookNumber: 2,  book:"book02", t:"t05",image:"mi3_4leg10", text: "The Legs",level: "Level 2",length: 11 ),
     Tutorial(key:"Book02",bookNumber: 2,  book:"book02", t:"t06",image:"mi3_4hand11", text: "The Hands",level: "Level 2",length: 11),
-    Tutorial(key:"Book02",bookNumber: 2,  book:"Book02", t:"t07",image:"mi3_4foot08", text: "The Feet",level: "Level 2",length: 08)]
+    Tutorial(key:"Book02",bookNumber: 2,  book:"Book02", t:"t07",image:"mi3_4foot08", text: "The Feet",level: "Level 2",length: 09)]
 
 let book3Tutorials = [
-    Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t01",image:"ma3_4figure13", text: "Full figure",level: "Level 3",length: 13 ),
-    Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t02",image:"ma3_4torso13", text: "The Head",level: "Level 3",length: 13 ),
-    Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t03",image:"ma3_4legs12", text: "The Torso",level: "Level 3",length: 12 ),
-    Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t04",image:"ma3_4head17", text: "The Arms",level: "Level 3",length: 17 ),
-    Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t05",image:"ma3_4hands07", text: "The Legs",level: "Level 3",length: 7 ),
+    Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t01",image:"ma3_4figure13", text: "Full figure",level: "Level 3",length: 14 ),
+    Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t02",image:"ma3_4torso13", text: "The Head",level: "Level 3",length: 20 ),
+    Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t03",image:"ma3_4legs12", text: "The Torso",level: "Level 3",length: 16 ),
+    Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t04",image:"ma3_4head17", text: "The Arms",level: "Level 3",length: 13 ),
+    Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t05",image:"ma3_4hands07", text: "The Legs",level: "Level 3",length: 13 ),
     Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t06",image:"ma3_4foot07", text: "The Hands",level: "Level 3",length: 7 ),
     Tutorial(key:"Book03",bookNumber: 3,  book:"book03", t:"t07",image:"ma3_4arms12", text: "The Feet",level: "Level 3",length: 7 )
 ]
