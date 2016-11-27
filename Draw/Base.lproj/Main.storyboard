@@ -22,16 +22,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWj-ag-7rg">
-                                <rect key="frame" x="0.0" y="64" width="375" height="1436"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWj-ag-7rg">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="1501"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vwv-xi-fn9" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="-65" width="375" height="1400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doM-Dv-KyV" userLabel="Welcome Label">
                                                 <rect key="frame" x="10" y="15" width="355" height="95"/>
                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="doM-Dv-KyV" secondAttribute="height" multiplier="71:19" id="E0I-W4-mdu"/>
                                                     <constraint firstAttribute="height" constant="95" id="WwA-Fz-ctH"/>
                                                 </constraints>
                                                 <string key="text">Welcone to Learn How to Draw
@@ -48,7 +49,7 @@ Or the Tutorials tab for individual lessons</string>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XE4-NI-Aft">
-                                                <rect key="frame" x="10" y="314.5" width="355" height="1"/>
+                                                <rect key="frame" x="20" y="314.5" width="335" height="1"/>
                                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="JMT-FH-q1w"/>
@@ -64,7 +65,7 @@ Or the Tutorials tab for individual lessons</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GE9-lE-26r">
-                                                        <rect key="frame" x="10" y="199" width="335" height="72"/>
+                                                        <rect key="frame" x="25" y="199" width="305" height="90"/>
                                                         <string key="text">Will Sliney is an award winning and best selling comics artist and writer from Cork. Will is best known for his work on Marvels Spider-Man 2099, Fearless Defenders and Star Wars.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -80,14 +81,14 @@ Or the Tutorials tab for individual lessons</string>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="GE9-lE-26r" firstAttribute="leading" secondItem="HxX-mv-eBN" secondAttribute="leading" constant="10" id="3sD-DJ-CGn"/>
+                                                    <constraint firstItem="GE9-lE-26r" firstAttribute="leading" secondItem="HxX-mv-eBN" secondAttribute="leading" constant="25" id="3sD-DJ-CGn"/>
                                                     <constraint firstItem="DKw-u6-Cpn" firstAttribute="leading" secondItem="HxX-mv-eBN" secondAttribute="leading" id="A2C-D5-LXT"/>
                                                     <constraint firstAttribute="bottom" secondItem="DKw-u6-Cpn" secondAttribute="bottom" id="BGc-J7-pdc"/>
                                                     <constraint firstAttribute="width" secondItem="HxX-mv-eBN" secondAttribute="height" multiplier="71:61" id="CEJ-9R-7t4"/>
                                                     <constraint firstAttribute="trailing" secondItem="DKw-u6-Cpn" secondAttribute="trailing" id="Npb-lX-ExD"/>
                                                     <constraint firstItem="J8R-CR-mOR" firstAttribute="leading" secondItem="HxX-mv-eBN" secondAttribute="leading" id="VjB-kH-Kb4"/>
                                                     <constraint firstItem="GE9-lE-26r" firstAttribute="top" secondItem="J8R-CR-mOR" secondAttribute="bottom" constant="10" id="cHm-fc-Hbs"/>
-                                                    <constraint firstAttribute="trailing" secondItem="GE9-lE-26r" secondAttribute="trailing" constant="10" id="dTn-mC-5EV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GE9-lE-26r" secondAttribute="trailing" constant="25" id="dTn-mC-5EV"/>
                                                     <constraint firstItem="J8R-CR-mOR" firstAttribute="top" secondItem="HxX-mv-eBN" secondAttribute="top" id="k4g-sk-Ysh"/>
                                                     <constraint firstAttribute="trailing" secondItem="J8R-CR-mOR" secondAttribute="trailing" id="ubg-dR-JLP"/>
                                                 </constraints>
@@ -102,7 +103,7 @@ Or the Tutorials tab for individual lessons</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn how to use the app here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-13-1JZ">
-                                                        <rect key="frame" x="10" y="199" width="335" height="21"/>
+                                                        <rect key="frame" x="25" y="199" width="320" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="aYO-w0-rK9"/>
                                                         </constraints>
@@ -121,16 +122,14 @@ Or the Tutorials tab for individual lessons</string>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="hFL-BI-Zdi" firstAttribute="leading" secondItem="MVf-HA-VyG" secondAttribute="leading" id="0T3-5L-075"/>
-                                                    <constraint firstItem="HV2-13-1JZ" firstAttribute="leading" secondItem="MVf-HA-VyG" secondAttribute="leading" constant="10" id="15e-FU-86W"/>
                                                     <constraint firstAttribute="trailing" secondItem="MIH-oG-Lo6" secondAttribute="trailing" id="9aL-xK-EPQ"/>
                                                     <constraint firstItem="MIH-oG-Lo6" firstAttribute="leading" secondItem="MVf-HA-VyG" secondAttribute="leading" id="RED-58-M0r"/>
                                                     <constraint firstAttribute="bottom" secondItem="MIH-oG-Lo6" secondAttribute="bottom" id="ScE-PC-XCI"/>
                                                     <constraint firstAttribute="width" secondItem="MVf-HA-VyG" secondAttribute="height" multiplier="71:46" id="Usr-r9-ZWE"/>
-                                                    <constraint firstItem="HV2-13-1JZ" firstAttribute="leading" secondItem="MVf-HA-VyG" secondAttribute="leading" constant="10" id="YyF-vf-zyo"/>
+                                                    <constraint firstItem="HV2-13-1JZ" firstAttribute="leading" secondItem="MVf-HA-VyG" secondAttribute="leading" constant="25" id="YyF-vf-zyo"/>
                                                     <constraint firstItem="HV2-13-1JZ" firstAttribute="top" secondItem="hFL-BI-Zdi" secondAttribute="bottom" constant="10" id="a5v-SE-9hV"/>
                                                     <constraint firstItem="hFL-BI-Zdi" firstAttribute="top" secondItem="MVf-HA-VyG" secondAttribute="top" id="bLY-Ie-2fm"/>
                                                     <constraint firstAttribute="trailing" secondItem="hFL-BI-Zdi" secondAttribute="trailing" id="fr8-Vt-3hI"/>
-                                                    <constraint firstAttribute="trailing" secondItem="HV2-13-1JZ" secondAttribute="trailing" constant="10" id="x15-eJ-uwX"/>
                                                     <constraint firstAttribute="trailing" secondItem="HV2-13-1JZ" secondAttribute="trailing" constant="10" id="xxC-oe-6DT"/>
                                                 </constraints>
                                             </view>
@@ -138,13 +137,13 @@ Or the Tutorials tab for individual lessons</string>
                                                 <rect key="frame" x="10" y="329.5" width="355" height="450"/>
                                                 <subviews>
                                                     <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b02isocover" translatesAutoresizingMaskIntoConstraints="NO" id="ahw-Ur-tIG">
-                                                        <rect key="frame" x="7" y="0.0" width="341" height="407.5"/>
+                                                        <rect key="frame" x="7" y="0.0" width="341" height="408"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ahw-Ur-tIG" secondAttribute="height" multiplier="241:288" id="KhU-Mp-FG5"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heroic Male 3/4 View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vn2-jl-lTP">
-                                                        <rect key="frame" x="10" y="419" width="335" height="21"/>
+                                                        <rect key="frame" x="25" y="419" width="320" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="iJj-we-IfF"/>
                                                         </constraints>
@@ -169,7 +168,7 @@ Or the Tutorials tab for individual lessons</string>
                                                     <constraint firstItem="wad-57-7UA" firstAttribute="leading" secondItem="TCF-PY-fF3" secondAttribute="leading" id="Lsg-Ol-Ol1"/>
                                                     <constraint firstAttribute="bottom" secondItem="wad-57-7UA" secondAttribute="bottom" id="ZeL-rZ-OJu"/>
                                                     <constraint firstAttribute="width" secondItem="TCF-PY-fF3" secondAttribute="height" multiplier="172:218" id="ZfU-oS-JU6"/>
-                                                    <constraint firstItem="Vn2-jl-lTP" firstAttribute="leading" secondItem="TCF-PY-fF3" secondAttribute="leading" constant="10" id="tHr-sO-PEe"/>
+                                                    <constraint firstItem="Vn2-jl-lTP" firstAttribute="leading" secondItem="TCF-PY-fF3" secondAttribute="leading" constant="25" id="tHr-sO-PEe"/>
                                                     <constraint firstItem="ahw-Ur-tIG" firstAttribute="top" secondItem="TCF-PY-fF3" secondAttribute="top" id="uPr-JE-n5O"/>
                                                     <constraint firstAttribute="bottom" secondItem="Vn2-jl-lTP" secondAttribute="bottom" constant="10" id="vKd-in-1X9"/>
                                                     <constraint firstItem="ahw-Ur-tIG" firstAttribute="centerX" secondItem="TCF-PY-fF3" secondAttribute="centerX" id="wsO-4U-uaJ"/>
@@ -178,43 +177,43 @@ Or the Tutorials tab for individual lessons</string>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="XE4-NI-Aft" firstAttribute="leading" secondItem="Vwv-xi-fn9" secondAttribute="leading" constant="10" id="8Nn-VA-V56"/>
-                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="leading" secondItem="Vwv-xi-fn9" secondAttribute="leading" constant="10" id="8pn-R6-n9h"/>
-                                            <constraint firstAttribute="trailing" secondItem="XE4-NI-Aft" secondAttribute="trailing" constant="10" id="Alh-Q3-X5t"/>
-                                            <constraint firstItem="TCF-PY-fF3" firstAttribute="leading" secondItem="Vwv-xi-fn9" secondAttribute="leading" constant="10" id="BMS-rm-CzY"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="trailing" secondItem="XE4-NI-Aft" secondAttribute="trailing" constant="10" id="0iu-Kw-TI9"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="trailing" secondItem="TCF-PY-fF3" secondAttribute="trailing" id="8h8-zg-lCc"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="leading" secondItem="qE8-Fm-5MG" secondAttribute="leading" id="9oC-ry-5g9"/>
                                             <constraint firstItem="TCF-PY-fF3" firstAttribute="top" secondItem="XE4-NI-Aft" secondAttribute="bottom" constant="14" id="CKA-f5-1k8"/>
-                                            <constraint firstAttribute="trailing" secondItem="doM-Dv-KyV" secondAttribute="trailing" constant="10" id="Gkz-72-f2P"/>
-                                            <constraint firstAttribute="height" constant="1400" id="KNZ-zZ-ztD"/>
-                                            <constraint firstItem="qE8-Fm-5MG" firstAttribute="leading" secondItem="Vwv-xi-fn9" secondAttribute="leading" constant="10" id="NSR-H9-ef1"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="leading" secondItem="HxX-mv-eBN" secondAttribute="leading" id="CwU-dv-3L5"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="top" secondItem="Vwv-xi-fn9" secondAttribute="top" constant="15" id="FdF-XI-fvd"/>
                                             <constraint firstItem="HxX-mv-eBN" firstAttribute="top" secondItem="TCF-PY-fF3" secondAttribute="bottom" constant="15" id="OsS-Tv-LhK"/>
-                                            <constraint firstAttribute="trailing" secondItem="qE8-Fm-5MG" secondAttribute="trailing" constant="10" id="Xyn-pU-wFc"/>
-                                            <constraint firstItem="MVf-HA-VyG" firstAttribute="leading" secondItem="Vwv-xi-fn9" secondAttribute="leading" constant="10" id="Ydy-VL-Rmt"/>
+                                            <constraint firstAttribute="height" constant="1400" id="RPG-BI-nZi"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="leading" secondItem="XE4-NI-Aft" secondAttribute="leading" constant="-10" id="Ueb-rr-GNF"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="leading" secondItem="TCF-PY-fF3" secondAttribute="leading" id="VNY-xZ-jKY"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="trailing" secondItem="MVf-HA-VyG" secondAttribute="trailing" id="axc-my-APA"/>
                                             <constraint firstItem="qE8-Fm-5MG" firstAttribute="top" secondItem="doM-Dv-KyV" secondAttribute="bottom" constant="15" id="bLh-ej-Er2"/>
-                                            <constraint firstAttribute="trailing" secondItem="MVf-HA-VyG" secondAttribute="trailing" constant="10" id="jWm-L9-ct5"/>
-                                            <constraint firstItem="HxX-mv-eBN" firstAttribute="leading" secondItem="Vwv-xi-fn9" secondAttribute="leading" constant="10" id="qjU-EA-n2R"/>
-                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="top" secondItem="Vwv-xi-fn9" secondAttribute="top" constant="15" id="rO1-Ia-yU0"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="trailing" secondItem="HxX-mv-eBN" secondAttribute="trailing" id="i4G-nK-3l1"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="trailing" secondItem="qE8-Fm-5MG" secondAttribute="trailing" id="ic0-Le-uzI"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="leading" secondItem="MVf-HA-VyG" secondAttribute="leading" id="kEh-o7-8F0"/>
+                                            <constraint firstItem="doM-Dv-KyV" firstAttribute="centerX" secondItem="Vwv-xi-fn9" secondAttribute="centerX" id="mPq-De-gGo"/>
                                             <constraint firstItem="TCF-PY-fF3" firstAttribute="top" secondItem="qE8-Fm-5MG" secondAttribute="bottom" constant="15" id="thX-wi-Gqd"/>
-                                            <constraint firstAttribute="trailing" secondItem="HxX-mv-eBN" secondAttribute="trailing" constant="10" id="tit-Pa-qfB"/>
                                             <constraint firstItem="MVf-HA-VyG" firstAttribute="top" secondItem="HxX-mv-eBN" secondAttribute="bottom" constant="15" id="vEg-1H-8ka"/>
-                                            <constraint firstAttribute="trailing" secondItem="TCF-PY-fF3" secondAttribute="trailing" constant="10" id="zx1-ii-hW6"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Vwv-xi-fn9" secondAttribute="trailing" id="06p-7e-9Zg"/>
-                                    <constraint firstItem="Vwv-xi-fn9" firstAttribute="top" secondItem="ZWj-ag-7rg" secondAttribute="top" constant="-65" id="O1e-jv-fMr"/>
-                                    <constraint firstItem="Vwv-xi-fn9" firstAttribute="leading" secondItem="ZWj-ag-7rg" secondAttribute="leading" id="qcz-Y9-Cuc"/>
-                                    <constraint firstAttribute="bottom" secondItem="Vwv-xi-fn9" secondAttribute="bottom" id="y9y-hW-3zv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vwv-xi-fn9" secondAttribute="bottom" id="2o7-aP-TnD"/>
+                                    <constraint firstItem="Vwv-xi-fn9" firstAttribute="top" secondItem="ZWj-ag-7rg" secondAttribute="top" id="5Hy-r8-Ytt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vwv-xi-fn9" secondAttribute="trailing" id="DUq-NQ-IYE"/>
+                                    <constraint firstItem="Vwv-xi-fn9" firstAttribute="leading" secondItem="ZWj-ag-7rg" secondAttribute="leading" id="Xk7-js-tGw"/>
+                                    <constraint firstItem="Vwv-xi-fn9" firstAttribute="centerX" secondItem="ZWj-ag-7rg" secondAttribute="centerX" id="Ya2-Pl-KVG"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="ZWj-ag-7rg" secondAttribute="bottom" id="I5s-mS-dqv"/>
-                            <constraint firstItem="ZWj-ag-7rg" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="IAd-tb-T1R"/>
-                            <constraint firstItem="Vwv-xi-fn9" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="QEb-yh-Rbg"/>
-                            <constraint firstAttribute="trailing" secondItem="ZWj-ag-7rg" secondAttribute="trailing" id="esb-kQ-UrL"/>
-                            <constraint firstItem="ZWj-ag-7rg" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="ubS-5k-r9W"/>
+                            <constraint firstAttribute="bottom" secondItem="ZWj-ag-7rg" secondAttribute="bottom" id="3uB-0r-nt7"/>
+                            <constraint firstItem="ZWj-ag-7rg" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-65" id="5Da-6n-7Hk"/>
+                            <constraint firstAttribute="trailing" secondItem="ZWj-ag-7rg" secondAttribute="trailing" id="Ef0-VB-VL9"/>
+                            <constraint firstItem="ZWj-ag-7rg" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="VWh-x4-02a"/>
+                            <constraint firstItem="ZWj-ag-7rg" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="hZq-gj-aqp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New" id="rez-7D-A7K"/>
@@ -987,7 +986,7 @@ Or the Tutorials tab for individual lessons</string>
         <image name="videothumb" width="852" height="479"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XHX-kh-FMQ"/>
         <segue reference="Tcc-u9-rWb"/>
+        <segue reference="JTw-tT-f88"/>
     </inferredMetricsTieBreakers>
 </document>
