@@ -222,6 +222,7 @@ Or the Tutorials tab for individual lessons</string>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
                         <outlet property="playVideo" destination="qE8-Fm-5MG" id="3em-xJ-8Gq"/>
+                        <outlet property="scrollView" destination="ZWj-ag-7rg" id="FKZ-Nu-Ihi"/>
                         <outlet property="topImage" destination="ahw-Ur-tIG" id="He8-1n-ibv"/>
                         <outlet property="topTitle" destination="Vn2-jl-lTP" id="gbq-jj-xr0"/>
                         <outlet property="tutorialImage" destination="hFL-BI-Zdi" id="hbD-in-i2q"/>

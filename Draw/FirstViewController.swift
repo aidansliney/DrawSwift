@@ -26,13 +26,19 @@ class FirstViewController: UIViewController {
     var book:[Book] = bookData
     
     
+    //
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidAppear(_ animated: Bool)
 
     {
         navigationController?.navigationBar.barTintColor = UIColor( red: 30/255, green: 30/255, blue:30/255, alpha: 0.2 )
+        
+
     }
     
-    
+
 
         
     

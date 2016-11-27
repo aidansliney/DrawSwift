@@ -30,9 +30,7 @@ public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products
 
 
 open class IAPHelper : NSObject  {
-    
-  
-    
+
     static let IAPHelperPurchaseNotification = "IAPHelperPurchaseNotification"
     
     fileprivate let productIdentifiers: Set<ProductIdentifier>
@@ -60,8 +58,6 @@ open class IAPHelper : NSObject  {
 // MARK: - StoreKit APIsddaa
 
 extension IAPHelper {
-    
-    
     
     public func requestProducts(completionHandler: @escaping ProductsRequestCompletionHandler) {
         productsRequest?.cancel()
