@@ -1,7 +1,7 @@
 
 let homeTopBook = 3
 var purchased = false
-let freeBooks = ["Book001","Book02","Book03","Book04","Book05","Book06","Book07","Book08","Book10","Book11"];
+let freeBooks = ["Book001","Book02","Book05","Book06","Book07","Book08","Book11"];
 
 
 let bookData = [
@@ -186,8 +186,8 @@ var helpTextD: [String: String] =
 "b00t01p10": "The blue lines should indicate light pencil that you will erase ",
 "b00t01p11": "The red lines indicate the muscular structure.",
 "b00t01p12": "The purple lines are the sculptural planes. ",
-"b00t01p13": "Start by laying down the basic shape of the head",
-"b01t01p01": "The black lines are the final artwork, those lines that will not be erased. ",
+"b00t01p13":  "The black lines are the final artwork, those lines that will not be erased. ",
+"b01t01p01":"Start by laying down the basic shape of the head",
 "b01t01p02": "Using the size of the head, we can lay out markers for proportions",
 "b01t01p03": "Your hero is 8 heads high",
 "b01t01p04": "Lay out the figure as simply as this. With circles as the joints and lines to indicate the limbs and torso",
